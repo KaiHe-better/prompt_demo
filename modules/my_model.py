@@ -2,6 +2,12 @@ from transformers import RobertaTokenizer, RobertaForMaskedLM
 import torch.nn as nn
 import torch
 
+
+def to_device():
+    if torch.cuda.is_available():
+        for i, v in my_input.items():
+            my_input[i] = v.cuda()
+    return 
 class My_model(nn.Module):
 
     def __init__(self, label_ids):
@@ -24,7 +30,7 @@ class My_model(nn.Module):
         for i in label_words_id:
             label_words.append(self.label_ids_map[int(i)])
         
-        return {"label_words": torch.tensor(label_words), 
+        return {"label_words": torch.tensor(label_words).cuda() if torch.cuda.is_available() else torch.tensor(label_words) ,
                 "loss": logits["loss"] if my_target['label_ids'] is not None  else None
                 }
                      
