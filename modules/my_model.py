@@ -30,7 +30,8 @@ class My_model(nn.Module):
         for i in label_words_id:
             label_words.append(self.label_ids_map[int(i)])
         
-        return {"label_words": torch.tensor(label_words).cuda() if torch.cuda.is_available() else torch.tensor(label_words) ,
+        return {"label_words_id":label_words_id,
+                "label_words": torch.tensor(label_words).cuda() if torch.cuda.is_available() else torch.tensor(label_words) ,
                 "loss": logits["loss"] if my_target['label_ids'] is not None  else None
                 }
                      
