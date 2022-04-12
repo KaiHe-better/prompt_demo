@@ -8,7 +8,7 @@ parser.add_argument('--load_ckpt_path', default=None, help='if load_ckpt_path is
 
 parser.add_argument('--early_stop_num', default=1000, help='how many epoch for training')
 parser.add_argument('--epoch', default=10000, help='how many epoch for training')
-parser.add_argument('--warmup_step', default=100, help='how many steps for warmup')
+parser.add_argument('--warmup_step', default=500, help='how many steps for warmup')
 parser.add_argument('--weight_decay', default=3e-5, help='L2')
 parser.add_argument('--lr', default=1e-5, help='learning rate')
 args = parser.parse_args()
@@ -35,10 +35,10 @@ def main():
     my_model = My_model()
     train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer)
     my_training_frame = My_Train_Framework(args, my_model, train_data_loader, val_data_loader, test_data_loader)
-    my_training_frame.train()
     
-
-
+    # my_training_frame.train()
+    my_training_frame.eval("Test", 0)
+    
 
 if __name__=="__main__":
     main()

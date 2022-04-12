@@ -88,7 +88,7 @@ class My_Train_Framework:
                     # break
                 
             train_acc = self.get_measure(epoch_gold_list, epoch_pred_list, epoch_num)
-            valid_acc = self.eval("Valid", epoch_num)
+            valid_acc, input_list, target_list, epoch_pred_list = self.eval("Valid", epoch_num)
             
             print("\n")
             if valid_acc > best_acc:
@@ -133,10 +133,11 @@ class My_Train_Framework:
                     pbar.set_postfix(postfix) 
                     pbar.update(1)
                     # break
-                    
-                acc = self.get_measure(epoch_gold_list, epoch_pred_list, epoch_num, train_flag)
+        if train_flag == "Test":
+            self.recored_res(input_list, target_list, epoch_pred_list)        
+        acc = self.get_measure(epoch_gold_list, epoch_pred_list, epoch_num, train_flag)
         self.my_model.train()
-        return acc
+        return acc, input_list, target_list, epoch_pred_list
     
     def recored_res(self, input_list, target_list, epoch_pred_list):
         with open(os.path.join(self.res_path, "res.txt"), "w") as f:
@@ -151,7 +152,7 @@ class My_Train_Framework:
     def get_measure(self, epoch_gold_list, epoch_pred_list, epoch_num, train_flag="Train"):
         
         acc = torch.mean((torch.stack(epoch_gold_list).view(-1) == torch.stack(epoch_pred_list).view(-1)).type(torch.FloatTensor))
-        print("\n")
+        print("")
         print("{0} res:  epoch: {1:s}, acc: {2:.2f}".format(str(train_flag), str(epoch_num), acc.item()))
         return acc
     
@@ -192,8 +193,14 @@ class My_Train_Framework:
         my_input, my_target = data_to_device(data_list)
         dic_res = self.my_model(my_input, my_target)
         
+        label_list= []
         for index, sent in enumerate(raw_sent_list) :
-            print(sent + "             <mask> -> "+ self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words"][index]])[0].replace("Ġ", "") )
+            generated_label = self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words"][index]])[0].replace("Ġ", "")
+            generated_label = self.my_model.tokenizer.decode([dic_res["label_words"][index]])[0].replace("Ġ", "")
+            label_list.append(generated_label)
+            print(sent + "             <mask> -> "+ generated_label )
+        return label_list
+            
             
                     
                     

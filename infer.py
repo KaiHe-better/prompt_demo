@@ -28,4 +28,4 @@ input_sentence_list = ["I am so happy !",
                        ]
 
 prmopt = "I feel <mask> that"
-my_training_frame.infer(input_sentence_list, prmopt)
+label_list = my_training_frame.infer(input_sentence_list, prmopt)

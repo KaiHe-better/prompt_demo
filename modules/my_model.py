@@ -12,10 +12,12 @@ class My_model(nn.Module):
 
     def forward(self, my_input, my_target):
         logits = self.model(my_input['all_tokens_ids'], attention_mask=my_input['attention_mask'], labels=my_target['label_ids'])
-        label_words = torch.gather(torch.argmax(logits["logits"], dim=-1), 1, my_target["mask_indexs"].unsqueeze(1)).squeeze(1)
+        
+        # label_words = torch.gather(torch.argmax(logits["logits"], dim=-1), 1, my_target["mask_indexs"].unsqueeze(1)).squeeze(1)
+        label_words = logits["logits"][0, my_target["mask_indexs"].unsqueeze(1)].argmax(axis=-1)
         
         return {"label_words":label_words, 
-                "loss": logits["loss"] if my_target['label_ids'] else None
+                "loss": logits["loss"] if my_target['label_ids'] is not None  else None
                 }
                      
     
