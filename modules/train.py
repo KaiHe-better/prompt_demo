@@ -146,7 +146,7 @@ class My_Train_Framework:
                     f.write("index: {} \n".format(index))
                     f.write("sentence: {} \n".format(sentence))
                     f.write("gold: {} \n".format(gold_item))
-                    f.write("pred: {} \n".format(self.my_model.tokenizer.convert_ids_to_tokens(pred_item.item()).replace("Ġ", "")))
+                    f.write("pred: {} \n".format(self.my_model.tokenizer.convert_ids_to_tokens([pred_item])[0].replace("Ġ", "")))
                     f.write("\n\n")
                                          
     def get_measure(self, epoch_gold_list, epoch_pred_list, epoch_num, train_flag="Train"):

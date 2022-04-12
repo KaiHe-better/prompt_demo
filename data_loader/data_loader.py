@@ -8,14 +8,14 @@ import os
 SEED = 123
 seed(SEED)
 
-label_ids_map = {'loving':0, 'hate':1, 'funny':2, 'angery':3, 'relieved':4, 'bored':5, 
-                 'empty':6, 'sad':7, 'happy':8, 'worried':9, 'enthusiastic':10, 'neutral':11, 'surprised':12}
+
 
 class My_Dataset(object):
-    def __init__(self, data, max_len, tokenizer):
+    def __init__(self, data, max_len, tokenizer, label_ids_map):
         self.all_data = data
         self.tokenizer = tokenizer
         self.max_len = max_len
+        self.label_ids_map = label_ids_map
         
     def __len__(self):
         return len(self.all_data)
@@ -38,7 +38,7 @@ class My_Dataset(object):
         
         labels = [-100]*self.max_len
         mask_indexs = all_tokens_ids.index(50264)
-        labels[mask_indexs] = label_ids_map[raw_label]
+        labels[mask_indexs] = self.label_ids_map[raw_label]
         
         return index, all_tokens_ids, attention_mask, labels, mask_indexs, raw_sent, raw_label
 
@@ -77,13 +77,13 @@ def data_to_device(tensor_data_list):
     return my_input, my_target
 
     
-def get_data_loader(batch_size, max_len, tokenizer, num_workers=8):
+def get_data_loader(batch_size, max_len, tokenizer, label_ids_map, num_workers=8):
     train_dev_test_list = ['./data/train.csv', './data/valid.csv', './data/test.csv']
     
     data_set_list = []
     for fname in train_dev_test_list:
         raw_data = open(fname, 'r', encoding='utf-8').readlines()
-        data_set = My_Dataset(raw_data, max_len, tokenizer)
+        data_set = My_Dataset(raw_data, max_len, tokenizer, label_ids_map)
         
         data_loader = DataLoader(dataset=data_set,
                                     batch_size=batch_size,
