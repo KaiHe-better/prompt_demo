@@ -87,7 +87,7 @@ class My_Train_Framework:
                     pbar.update(1)
                     # break
                 
-            train_acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num)
+            # train_acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num)
             valid_acc, input_list, target_list, epoch_pred_list = self.eval("Valid", epoch_num)
             
             print("\n")
@@ -100,6 +100,17 @@ class My_Train_Framework:
                 print("\n")
                 torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path)
                 self.recored_res(input_list, target_list, epoch_pred_list)
+            
+            with open(self.res_path+"/"+"perform.txt", "a") as f:
+                f.write(str(epoch_num))
+                f.write("\n")
+                f.write("loss: {}".format(str(dic_res["loss"].item())))
+                f.write("\n")
+                f.write("acc: {}".format(str(valid_acc.item())))
+                f.write("\n")
+                f.write("best epch: {}, best acc {}".format(str(epoch_num), str(valid_acc.item())))
+                f.write("\n")
+                f.write("\n")
                 
             if count < self.args.early_stop_num:
                 count+=1
@@ -133,7 +144,7 @@ class My_Train_Framework:
                     postfix['valid_loss']= '{0:.4f}'.format(dic_res["loss"])
                     pbar.set_postfix(postfix) 
                     pbar.update(1)
-                    # break
+                    break
                     
         if train_flag == "Test":
             self.recored_res(input_list, target_list, epoch_pred_list)  
@@ -201,7 +212,8 @@ class My_Train_Framework:
             generated_label = self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words"][index]])[0].replace("Ġ", "")
             generated_label = self.my_model.tokenizer.decode([dic_res["label_words"][index]])[0].replace("Ġ", "")
             label_list.append(generated_label)
-            print(sent + "             <mask> -> "+ generated_label )
+            print(sent + "             <mask> -> "+ generated_label)
+            
         return label_list
             
             

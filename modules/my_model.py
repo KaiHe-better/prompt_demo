@@ -8,6 +8,7 @@ def to_device():
         for i, v in my_input.items():
             my_input[i] = v.cuda()
     return 
+
 class My_model(nn.Module):
 
     def __init__(self, label_ids):
@@ -26,6 +27,7 @@ class My_model(nn.Module):
         
         label_words_id = torch.argmax(logits["logits"][:, :, list(self.label_ids_map.values())], dim=-1)
         label_words_id = torch.gather(label_words_id, 1, my_target["mask_indexs"].unsqueeze(1)).squeeze(1)
+        
         label_words = []
         for i in label_words_id:
             label_words.append(self.label_ids_map[int(i)])

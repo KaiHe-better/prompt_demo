@@ -1,85 +1,67 @@
-index: 480 
-sentence: I feel <mask> that I'm poorly and can't sleep 
-gold: sad 
-pred: hate 
-
-
-index: 1 
-sentence: I feel <mask> that Layin n bed with a headache ughhhh...waitin on your call... 
-gold: sad 
-pred: hate 
-
-
-index: 456 
-sentence: I feel <mask> that Not really sleepy ...bored is the right word ... again not much work 
-gold: surprised 
-pred: surprised 
-
-
-index: 363 
-sentence: I feel <mask> that Lady across the way had a miscarriage  say a prayer 
-gold: worried 
-pred: sad 
-
-
-index: 260 
-sentence: I feel <mask> that Im sorry I don't think I stick out  at least compared to what I used to look like. 
-gold: surprised 
-pred: hate 
-
-
-index: 353 
-sentence: I feel <mask> that english class! working on interactive orals 
+index: 395 
+sentence: I feel <mask> that Must... have... new music... I won't sleep until you give us Chapter ... I might die first though... Hurry! 
 gold: happy 
 pred: surprised 
 
 
-index: 310 
-sentence: I feel <mask> that I'll make him nachos tomorrow. Better than if he would have made them himself. 
-gold: neutral 
-pred: happy 
-
-
-index: 430 
-sentence: I feel <mask> that nope. they are all sleeping cuz they live on the east coast. 
-gold: surprised 
-pred: neutral 
-
-
-index: 163 
-sentence: I feel <mask> that I miss my puppy 
+index: 125 
+sentence: I feel <mask> that wonders why her Karma points turned into . 
 gold: sad 
+pred: surprised 
+
+
+index: 321 
+sentence: I feel <mask> that no more arrested development. i am sad. 
+gold: sad 
+pred: sad 
+
+
+index: 99 
+sentence: I feel <mask> that cayogial i wanted to come to BZ this summer not so sure anymore... a teacher's life in the summer SUCKS 
+gold: hate 
 pred: hate 
 
 
-index: 68 
-sentence: I feel <mask> that So i think my son might have the flu cause I def. just cleaned up a stanky puke mess Poor pumkpin 
+index: 59 
+sentence: I feel <mask> that Aww Onward and upwards now  yay! Still sad to leave I bet. 
+gold: sad 
+pred: sad 
+
+
+index: 334 
+sentence: I feel <mask> that You never answered your DM I sent you.... I need your info... 
 gold: worried 
-pred: hate 
+pred: sad 
 
 
-index: 192 
-sentence: I feel <mask> that I had a dream about a pretty pretty beach and there was no beach when I woke up 
-gold: surprised 
-pred: neutral 
-
-
-index: 205 
-sentence: I feel <mask> that happy birthdayyy! hope you have an awesome day. didn't see you at next last night! 
+index: 114 
+sentence: I feel <mask> that I'm sure some1 will cum out and play. I'm workin through til midnight. 
 gold: neutral 
 pred: happy 
 
 
-index: 168 
-sentence: I feel <mask> that yearling in pet home died... very sad for their whole family 
+index: 454 
+sentence: I feel <mask> that Somebody please save the polar bears! 
+gold: worried 
+pred: worried 
+
+
+index: 354 
+sentence: I feel <mask> that Thank you for the rec but that doesn't work 
+gold: worried 
+pred: sad 
+
+
+index: 331 
+sentence: I feel <mask> that Fuuudge. Movie store is closed 
 gold: sad 
-pred: hate 
+pred: sad 
 
 
-index: 290 
-sentence: I feel <mask> that bored now because i was talking to someone but now they're busy with something else just kinda a bummer  idk 
-gold: neutral 
-pred: hate 
+index: 51 
+sentence: I feel <mask> that why am i so tired? 
+gold: worried 
+pred: empty 
 
 
 index: 234 
@@ -88,93 +70,21 @@ gold: happy
 pred: surprised 
 
 
-index: 294 
-sentence: I feel <mask> that Okay  so twitter suddenly changed  how do I respond to messages now 
-gold: worried 
-pred: neutral 
-
-
-index: 490 
-sentence: I feel <mask> that Can't sleep and nothings on tv!! 
+index: 423 
+sentence: I feel <mask> that what?! Come as you are!!! But erock just left bah D: 
 gold: neutral 
 pred: hate 
 
 
-index: 66 
-sentence: I feel <mask> that ia so much! i haven't really been happy with any of cooks choices for singles. 
-gold: worried 
-pred: hate 
-
-
-index: 193 
-sentence: I feel <mask> that Have a ware SE  not fast enough for x X25-M SSD RAID5. Mhz IOP on the HPT. Might try an Adaptec (1.2Ghz). 
-gold: sad 
-pred: worried 
-
-
-index: 323 
-sentence: I feel <mask> that omg i keep losing followers this is so sad i want one day....thats my goal 
-gold: sad 
-pred: hate 
-
-
-index: 89 
-sentence: I feel <mask> that .. I'm suppposed to be sleep. But i got some much to do. ; i got that one part of the song stuck in my head &quot;your a jerk (iknow)&quot; blaahh 
-gold: worried 
-pred: hate 
-
-
-index: 27 
-sentence: I feel <mask> that Damm servers still down i need to hit before all the koxpers pass me 
-gold: worried 
-pred: hate 
-
-
-index: 145 
-sentence: I feel <mask> that i cant do anything 
-gold: worried 
-pred: empty 
-
-
-index: 190 
-sentence: I feel <mask> that bec vs fat food --- winner = fat food but not this weeknend  ill beat it! 
-gold: surprised 
-pred: surprised 
-
-
-index: 130 
-sentence: I feel <mask> that claire love the show  got into the office am and no radio 
-gold: neutral 
+index: 293 
+sentence: I feel <mask> that i kno i doooo!!!!!!!!!! yall partyin with out me 
+gold: happy 
 pred: happy 
 
 
-index: 109 
-sentence: I feel <mask> that I wish she knew what she puts me through..She stole my heart  never gave it back..and occasionally she likes to be like look what I have! 
+index: 418 
+sentence: I feel <mask> that how I wish my parents put me into a Chinese school when I was younger. Then  it'll be so much easier for me to get a job... 
 gold: sad 
-pred: hate 
-
-
-index: 79 
-sentence: I feel <mask> that Sure you will tweet about this when you're back  but news is abuzz about TR Knight's leaving &quot;confirmed&quot; today. Muy triste. 
-gold: worried 
-pred: surprised 
-
-
-index: 377 
-sentence: I feel <mask> that vineri...nimic special sau probabil un alt weekend pierdut... 
-gold: worried 
-pred: happy 
-
-
-index: 396 
-sentence: I feel <mask> that my stupid tooooth hurts 
-gold: sad 
-pred: hate 
-
-
-index: 230 
-sentence: I feel <mask> that oh no i am always here &lt;3 
-gold: worried 
 pred: hate 
 
 
@@ -184,27 +94,171 @@ gold: relieved
 pred: empty 
 
 
-index: 6 
-sentence: I feel <mask> that I should be sleep  but im not! thinking about an old friend who I want. but he's married now. damn  ; he wants me ! scandalous! 
-gold: sad 
-pred: hate 
-
-
-index: 158 
-sentence: I feel <mask> that I'm showing my age. Renewed my tags last week  went down $20. Got my insurance renewal email today  went down $100. I don't wanna be old 
+index: 87 
+sentence: I feel <mask> that i am jealous of your mom talking to . i want to see you all our twittering is making me miss you 
 gold: worried 
 pred: hate 
 
 
-index: 238 
-sentence: I feel <mask> that i was watching Harpers Island  lol... there was no vodka involved 
-gold: empty 
+index: 66 
+sentence: I feel <mask> that ia so much! i haven't really been happy with any of cooks choices for singles. 
+gold: worried 
+pred: hate 
+
+
+index: 415 
+sentence: I feel <mask> that hmmm  I thought u were sleeping!! Too bad I can't see those videos until tomorrow night. 
+gold: worried 
+pred: sad 
+
+
+index: 108 
+sentence: I feel <mask> that ahh! big scary bug flying around my room!!!!! 
+gold: worried 
+pred: hate 
+
+
+index: 42 
+sentence: I feel <mask> that just picked up her Blackberry from the middle of the street! Both she and it are crushed! 
+gold: worried 
+pred: hate 
+
+
+index: 434 
+sentence: I feel <mask> that decided trans frm relaxed natural hair but i wish my whole head looked like my roots. Age of the instant gratification.... 
+gold: neutral 
+pred: hate 
+
+
+index: 107 
+sentence: I feel <mask> that THIS WEBSITE GAVE ME A VIRUS! When i opened it more windows kept POPPING up 
+gold: hate 
+pred: happy 
+
+
+index: 213 
+sentence: I feel <mask> that - Still a pity it comes with no lamb though 
+gold: sad 
+pred: sad 
+
+
+index: 384 
+sentence: I feel <mask> that I have to work in the morning while my friends get to party it up.....stupid bberry lite flashing red and I have no messages! 
+gold: hate 
+pred: hate 
+
+
+index: 494 
+sentence: I feel <mask> that fuckin'm transtelecom 
+gold: angery 
+pred: hate 
+
+
+index: 34 
+sentence: I feel <mask> that SoCal! stoked. or maybe not.. tomorrow 
+gold: neutral 
 pred: surprised 
 
 
-index: 311 
-sentence: I feel <mask> that yeahhh. nt judge my pillow 
+index: 25 
+sentence: I feel <mask> that On my way home n having deal w underage girls drinking gin on da bus while talking bout keggers......damn i feel old 
+gold: worried 
+pred: hate 
+
+
+index: 168 
+sentence: I feel <mask> that yearling in pet home died... very sad for their whole family 
+gold: sad 
+pred: hate 
+
+
+index: 386 
+sentence: I feel <mask> that The link doesn't work 
+gold: sad 
+pred: worried 
+
+
+index: 7 
+sentence: I feel <mask> that Hmmm. is down 
+gold: worried 
+pred: worried 
+
+
+index: 435 
+sentence: I feel <mask> that sorry bout the cat 
+gold: sad 
+pred: sad 
+
+
+index: 219 
+sentence: I feel <mask> that I hate Bakersfield and I hate the Ports  let me go home already. I want to start my vacation. 
+gold: hate 
+pred: hate 
+
+
+index: 252 
+sentence: I feel <mask> that No refunds but they do retrieve accounts  takes like a week. Just hoping the thief doesn't use hacks or then it's permaban 
+gold: worried 
+pred: sad 
+
+
+index: 115 
+sentence: I feel <mask> that I second that. I wish it rained more where I am 
 gold: neutral 
+pred: neutral 
+
+
+index: 76 
+sentence: I feel <mask> that Neither are ELP!! 
+gold: neutral 
+pred: hate 
+
+
+index: 203 
+sentence: I feel <mask> that Nite. Now I'm up n bored as opposed to almost sleep frm b 
+gold: empty 
+pred: hate 
+
+
+index: 0 
+sentence: I feel <mask> that i know i was listenin to bad habit earlier and i started freakin at his part 
+gold: empty 
+pred: hate 
+
+
+index: 274 
+sentence: I feel <mask> that I have forgot the live with the Jonas Brothers on Facebook 
+gold: worried 
+pred: sad 
+
+
+index: 488 
+sentence: I feel <mask> that has work tom. 
+gold: sad 
+pred: worried 
+
+
+index: 174 
+sentence: I feel <mask> that just uploaded my new blog... a painful story about an s year old man who cried because he wanted to die... very sad 
+gold: sad 
+pred: hate 
+
+
+index: 314 
+sentence: I feel <mask> that I HATE rob zombie movies. ; the smell of weed. Vommmm. 
+gold: sad 
+pred: hate 
+
+
+index: 139 
+sentence: I feel <mask> that I cant sleep  but im too sore to move 
+gold: worried 
+pred: hate 
+
+
+index: 320 
+sentence: I feel <mask> that Hanging out with sam  billy  and veronica. not going to school tomorrow to take sam to body shops. Dang car accidents 
+gold: worried 
 pred: hate 
 
 
@@ -214,46 +268,22 @@ gold: neutral
 pred: worried 
 
 
-index: 32 
-sentence: I feel <mask> that I missed the bl***y bus!!!!!!!! 
+index: 58 
+sentence: I feel <mask> that But I got dibs on Sulu... 
 gold: neutral 
-pred: hate 
+pred: worried 
 
 
-index: 5 
-sentence: I feel <mask> that Re-pinging : why didn't you go to prom? BC my bf didn't like my friends 
-gold: worried 
-pred: hate 
-
-
-index: 327 
-sentence: I feel <mask> that im contacting PAWS Philippines so i can find &quot;tiger&quot; a new owner. im so sad. i love my dog soo much 
-gold: sad 
-pred: hate 
-
-
-index: 476 
-sentence: I feel <mask> that is not sleeping because he has paperwork to do. 
-gold: worried 
-pred: hate 
-
-
-index: 174 
-sentence: I feel <mask> that just uploaded my new blog... a painful story about an s year old man who cried because he wanted to die... very sad 
-gold: sad 
-pred: hate 
-
-
-index: 331 
-sentence: I feel <mask> that Fuuudge. Movie store is closed 
-gold: sad 
-pred: sad 
-
-
-index: 160 
-sentence: I feel <mask> that don't you hate it when you finish all your work and there's still hours left of work time 
+index: 365 
+sentence: I feel <mask> that ohhhh thunderstorms...boo why do they always have to make the power go out?? 
 gold: hate 
 pred: hate 
+
+
+index: 414 
+sentence: I feel <mask> that oh how i wish you would get her to sign something then send it to me or let me call you when you meet or something 
+gold: worried 
+pred: empty 
 
 
 index: 432 
@@ -262,51 +292,21 @@ gold: sad
 pred: hate 
 
 
-index: 70 
-sentence: I feel <mask> that I cant give any bday nudges. 
+index: 241 
+sentence: I feel <mask> that words after sex it never started... 
 gold: neutral 
-pred: sad 
+pred: hate 
 
 
-index: 343 
-sentence: I feel <mask> that Sad that Christian Lacroix had to file bankruptcy 
+index: 490 
+sentence: I feel <mask> that Can't sleep and nothings on tv!! 
+gold: neutral 
+pred: hate 
+
+
+index: 313 
+sentence: I feel <mask> that my teeth and head hurts 
 gold: sad 
-pred: hate 
-
-
-index: 268 
-sentence: I feel <mask> that It's pissing me off and not letting me follow ericka 
-gold: sad 
-pred: hate 
-
-
-index: 438 
-sentence: I feel <mask> that Pug just woke me from an incredible sleep! 
-gold: loving 
-pred: surprised 
-
-
-index: 129 
-sentence: I feel <mask> that $! My nose stud fell out and I can't find it Looks like I'll have to head into Amsterdam today and get a new one 
-gold: worried 
-pred: hate 
-
-
-index: 385 
-sentence: I feel <mask> that FB is boring and i wanna sing RIGHT NOW..! *-* 
-gold: happy 
-pred: hate 
-
-
-index: 219 
-sentence: I feel <mask> that I hate Bakersfield and I hate the Ports  let me go home already. I want to start my vacation. 
-gold: hate 
-pred: hate 
-
-
-index: 25 
-sentence: I feel <mask> that On my way home n having deal w underage girls drinking gin on da bus while talking bout keggers......damn i feel old 
-gold: worried 
 pred: hate 
 
 

@@ -1,6 +1,8 @@
-import torch
-import transformers
 
 
-print(torch.__version__)
-print(transformers.__version__)
+def generate_prompt(sentence, entitiy1, entity2, relation):
+    prompt = XXX
+
+    return prompt
+
+
