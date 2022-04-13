@@ -1,101 +1,743 @@
-index: 75 
-sentence: I feel <mask> that I miss Voobys! 
-gold: neutral 
-pred: sad 
-
-
-index: 460 
-sentence: I feel <mask> that reminds me of the weather a month ago it was horrible I hope all is well hugs 
+index: 167 
+sentence: I feel <mask> that Up reading tabloids about other people's lives...thinking what I'm gonna do with mine when my baby leaves? 
 gold: worried 
 pred: worried 
 
 
-index: 270 
-sentence: I feel <mask> that my mums trying to make me feel ebtter about stopping voting adn not winning shortstack. i almost cried. 
+index: 392 
+sentence: I feel <mask> that ur supposed to be in BK tho 
+gold: surprised 
+pred: neutral 
+
+
+index: 63 
+sentence: I feel <mask> that in all honesty...pain blech. 
 gold: sad 
+pred: neutral 
+
+
+index: 430 
+sentence: I feel <mask> that nope. they are all sleeping cuz they live on the east coast. 
+gold: surprised 
+pred: neutral 
+
+
+index: 412 
+sentence: I feel <mask> that heehee. i love you! i am tired. 
+gold: sad 
+pred: loving 
+
+
+index: 41 
+sentence: I feel <mask> that &lt;3 your gonna be the first twitter cause your amazing lol. come to canada would do anything to see you perform 
+gold: funny 
+pred: happy 
+
+
+index: 183 
+sentence: I feel <mask> that I just saw pics from this past Thanksgiving and am sad because Grandma was in them. 
+gold: sad 
+pred: sad 
+
+
+index: 464 
+sentence: I feel <mask> that No  it's not... 
+gold: neutral 
+pred: neutral 
+
+
+index: 128 
+sentence: I feel <mask> that well I ran out of beer so I left. Not sure about the ETA. Waiting waiting waiting. Bleh Gonna be a long nite methinks. 
+gold: neutral 
+pred: worried 
+
+
+index: 477 
+sentence: I feel <mask> that Showered in ice-cold water. Sweating now. Means one thing: I'm sick 
+gold: worried 
+pred: worried 
+
+
+index: 91 
+sentence: I feel <mask> that How can it be so freaking difficult to get a system-wide spellchecker? Shit  I'd settle for an office suite one. Stupid unhelpful Windows 
+gold: neutral 
 pred: hate 
 
 
-index: 340 
-sentence: I feel <mask> that 
+index: 285 
+sentence: I feel <mask> that I don't even want to know WHY you know about VHEMT  but don't go - we'd miss you 
+gold: worried 
+pred: sad 
+
+
+index: 244 
+sentence: I feel <mask> that Trudy's off Burnet...the one up north that no one goes to 
 gold: empty 
 pred: neutral 
 
 
-index: 293 
-sentence: I feel <mask> that i kno i doooo!!!!!!!!!! yall partyin with out me 
-gold: happy 
-pred: happy 
-
-
-index: 413 
-sentence: I feel <mask> that my mobile phone refuses to charge!! either the battery is broken or the chargerrr ( booooo 
-gold: worried 
-pred: neutral 
-
-
-index: 282 
-sentence: I feel <mask> that i wont have time to buy and i need a new binder pa 
-gold: neutral 
-pred: neutral 
-
-
-index: 333 
-sentence: I feel <mask> that Hahahaha! It's not horrible  if others were singing with I'm sure it could work. I wish I could afford my own drum set 
-gold: hate 
-pred: happy 
-
-
-index: 224 
-sentence: I feel <mask> that out with ; i am soooo hungry 
-gold: neutral 
-pred: bored 
-
-
-index: 313 
-sentence: I feel <mask> that my teeth and head hurts 
+index: 226 
+sentence: I feel <mask> that Had to cancel wow for now 
 gold: sad 
 pred: neutral 
 
 
-index: 45 
-sentence: I feel <mask> that Bed!!!!!... its time ..... hope i go to school tomorrow  all though i don't feel very well right now 
+index: 221 
+sentence: I feel <mask> that Looking for desktop twitter app that will actually let you access URLs  any suggestions? I liked Twittle but no linking 
+gold: neutral 
+pred: neutral 
+
+
+index: 141 
+sentence: I feel <mask> that just answered you- never learned how to write in French- just basic stuff- 
+gold: empty 
+pred: neutral 
+
+
+index: 81 
+sentence: I feel <mask> that there was a mix up with my dentist appt this afternoon. so they rescheduled me for tomorrow am. 
+gold: neutral 
+pred: neutral 
+
+
+index: 77 
+sentence: I feel <mask> that dude  that is my favorite sandwich place ever. ummm did you take PICTURES? 
+gold: happy 
+pred: neutral 
+
+
+index: 414 
+sentence: I feel <mask> that oh how i wish you would get her to sign something then send it to me or let me call you when you meet or something 
+gold: worried 
+pred: neutral 
+
+
+index: 469 
+sentence: I feel <mask> that So have a headache right now and it sucks 
+gold: sad 
+pred: sad 
+
+
+index: 286 
+sentence: I feel <mask> that That's awesome! We have that this weekend too but I can't go because I'm moving this Sat. I should be a lot of fun though 
+gold: funny 
+pred: happy 
+
+
+index: 53 
+sentence: I feel <mask> that time diff and i've just been wrapped up in day to day stuff so i havent been tweeting. talk soon must sleep...up in hrs 
+gold: neutral 
+pred: neutral 
+
+
+index: 400 
+sentence: I feel <mask> that It's good isn't it! Our holiday chalet is out of sight but look v similar to those ones. Going home again today 
+gold: neutral 
+pred: happy 
+
+
+index: 278 
+sentence: I feel <mask> that I have to admit  I'm a bit bummed out that I wasn't with my friends walking today.... 
+gold: worried 
+pred: sad 
+
+
+index: 181 
+sentence: I feel <mask> that I was watching Parental Control 
+gold: neutral 
+pred: neutral 
+
+
+index: 348 
+sentence: I feel <mask> that When will Medhurst play again? 
+gold: neutral 
+pred: neutral 
+
+
+index: 480 
+sentence: I feel <mask> that I'm poorly and can't sleep 
+gold: sad 
+pred: worried 
+
+
+index: 151 
+sentence: I feel <mask> that thanks neemah. I'm gonna be soooo close to you and izzy  yet so far 
+gold: loving 
+pred: loving 
+
+
+index: 161 
+sentence: I feel <mask> that urgh stop it guys 
+gold: worried 
+pred: neutral 
+
+
+index: 246 
+sentence: I feel <mask> that I Can`t do minutes of Treadmill but done minutes for today already  gonna do minutes more 
+gold: happy 
+pred: neutral 
+
+
+index: 179 
+sentence: I feel <mask> that OMG Ur alive!!! LOL day has gone sooo slow I'm going insane Grrr You doing anything tonight? 
+gold: funny 
+pred: worried 
+
+
+index: 56 
+sentence: I feel <mask> that bed...sorta. today was good  sara has strep thought Angelina does to; i shared a water with her B4 they told me  i will prob get it to 
+gold: enthusiastic 
+pred: neutral 
+
+
+index: 239 
+sentence: I feel <mask> that i am doing homework it sux big time maths is the worst!!!!!! 
 gold: worried 
 pred: worried 
 
 
-index: 391 
-sentence: I feel <mask> that love is like a war  easy to begin  hard to end..fiuuhh... 
+index: 173 
+sentence: I feel <mask> that well fuck- this new pain med has an odd warning that actually applies to me. i can't take this. -chan is displeased. 
+gold: sad 
+pred: sad 
+
+
+index: 431 
+sentence: I feel <mask> that I bet its cool down in SR  huh? It's not here. I haven't stopped sweating since noon when dad and I were packing 
 gold: neutral 
-pred: hate 
+pred: neutral 
+
+
+index: 496 
+sentence: I feel <mask> that I met a stranger just min ago. He was stalking me at the store 
+gold: worried 
+pred: neutral 
+
+
+index: 290 
+sentence: I feel <mask> that bored now because i was talking to someone but now they're busy with something else just kinda a bummer  idk 
+gold: neutral 
+pred: sad 
+
+
+index: 440 
+sentence: I feel <mask> that Sooo much work so little time 
+gold: worried 
+pred: worried 
+
+
+index: 163 
+sentence: I feel <mask> that I miss my puppy 
+gold: sad 
+pred: sad 
+
+
+index: 40 
+sentence: I feel <mask> that mmm much better day... so far! it's still quite early. last day of uds 
+gold: happy 
+pred: neutral 
+
+
+index: 411 
+sentence: I feel <mask> that At Charle's with the power out. LOL! Damn SaveMart lost power and we could not buy beer. 
+gold: hate 
+pred: sad 
+
+
+index: 106 
+sentence: I feel <mask> that i wanted to come to BZ this summer not so sure anymore... a teacher's life in the summer SUCKS 
+gold: sad 
+pred: sad 
+
+
+index: 86 
+sentence: I feel <mask> that dammit! hulu desktop has totally screwed up my ability to talk to a particular port on one of our dev servers. so i can't watch and code 
+gold: hate 
+pred: worried 
+
+
+index: 403 
+sentence: I feel <mask> that my dog ran awayyy 
+gold: worried 
+pred: neutral 
+
+
+index: 129 
+sentence: I feel <mask> that $! My nose stud fell out and I can't find it Looks like I'll have to head into Amsterdam today and get a new one 
+gold: worried 
+pred: sad 
+
+
+index: 357 
+sentence: I feel <mask> that I don't know how ima work out tomorrow wit my body dis sore ugh 
+gold: worried 
+pred: worried 
+
+
+index: 408 
+sentence: I feel <mask> that I want to go to Peru this summer ahhhhhhh! Hopefully! Yesyesyes! I miss it over there!!! 
+gold: loving 
+pred: happy 
+
+
+index: 92 
+sentence: I feel <mask> that Last one month due to summer  strawberry is not availble in the Chennai markets! 
+gold: worried 
+pred: neutral 
+
+
+index: 287 
+sentence: I feel <mask> that night night twitter world. [still cant believe the thomas thing tomorrow's gunna be FUN/SAD] 
+gold: neutral 
+pred: sad 
 
 
 index: 219 
 sentence: I feel <mask> that I hate Bakersfield and I hate the Ports  let me go home already. I want to start my vacation. 
 gold: hate 
+pred: hate 
+
+
+index: 291 
+sentence: I feel <mask> that i knoww things won't be the samee &lt;/3 
+gold: sad 
 pred: neutral 
 
 
-index: 416 
-sentence: I feel <mask> that Morning everyone sorry for going early last night had bad news  felt totally crap Today is a new day 
+index: 402 
+sentence: I feel <mask> that I'm just starting to feel really panicky and anxious that something bad has happened cos it seems like it's been ages 
+gold: worried 
+pred: worried 
+
+
+index: 386 
+sentence: I feel <mask> that The link doesn't work 
 gold: sad 
-pred: sad 
+pred: neutral 
 
 
-index: 436 
-sentence: I feel <mask> that needs to have an increase on her salary 
+index: 474 
+sentence: I feel <mask> that damn being drunk and hot sucks 
+gold: worried 
+pred: hate 
+
+
+index: 19 
+sentence: I feel <mask> that How are YOU convinced that I have always wanted you? What signals did I give off...damn I think I just lost another friend 
+gold: sad 
+pred: worried 
+
+
+index: 373 
+sentence: I feel <mask> that thats what i was thinking but the only time it's gonna be on is am! 
+gold: neutral 
+pred: neutral 
+
+
+index: 385 
+sentence: I feel <mask> that FB is boring and i wanna sing RIGHT NOW..! *-* 
+gold: happy 
+pred: neutral 
+
+
+index: 207 
+sentence: I feel <mask> that ill be over in an oir 
+gold: neutral 
+pred: neutral 
+
+
+index: 304 
+sentence: I feel <mask> that I wish I had Left Dead. But first I'd need something to play it on... 
+gold: sad 
+pred: neutral 
+
+
+index: 380 
+sentence: I feel <mask> that is home. safely... but hungry 
+gold: relieved 
+pred: neutral 
+
+
+index: 57 
+sentence: I feel <mask> that the recession. her hotel are restructuring how the accounts are done. adds a bit more pressure in the short term but we'll cope 
 gold: neutral 
 pred: worried 
 
 
-index: 184 
-sentence: I feel <mask> that it wont let me 
+index: 18 
+sentence: I feel <mask> that lady gaga tweeted about not being impressed by her video leaking just so you know 
 gold: worried 
 pred: neutral 
 
 
-index: 420 
-sentence: I feel <mask> that airport? and you didnt show up tonight homo! 
+index: 62 
+sentence: I feel <mask> that I want to buy this great album but unfortunately i dont hav enuff funds its &quot;long time noisy&quot; 
+gold: sad 
+pred: sad 
+
+
+index: 233 
+sentence: I feel <mask> that took a math test today. The day before the test  the teacher says bring your calculator. Luke was confident. Teacher decided no calcs. 
+gold: happy 
+pred: neutral 
+
+
+index: 229 
+sentence: I feel <mask> that It's :15 AM  and I hear a helicopter flying over my house. That's kind of weird. In other news  my headache is back. BOOOOO. 
+gold: worried 
+pred: worried 
+
+
+index: 234 
+sentence: I feel <mask> that omg  the concert was awesome  madrigals gave me chills on almost every piece...brooks also called up alumni  but i didnt get to go 
+gold: happy 
+pred: happy 
+
+
+index: 195 
+sentence: I feel <mask> that Ate Mandy  please forgive me. I really am sorry. I don't wanna lose my Bff 
+gold: worried 
+pred: sad 
+
+
+index: 192 
+sentence: I feel <mask> that I had a dream about a pretty pretty beach and there was no beach when I woke up 
+gold: surprised 
+pred: neutral 
+
+
+index: 381 
+sentence: I feel <mask> that Um  I was thrown from 's van yesterday and had to be taken to the ER 
+gold: sad 
+pred: worried 
+
+
+index: 398 
+sentence: I feel <mask> that Ready To Go School 
+gold: neutral 
+pred: neutral 
+
+
+index: 188 
+sentence: I feel <mask> that days I'm about ready to visit Torchwood and see if they've heard anything 
+gold: worried 
+pred: neutral 
+
+
+index: 131 
+sentence: I feel <mask> that Pats in philly at am. I love it. Mmm cheesesteak. Miss my boyfriend but I love vacation. 
+gold: loving 
+pred: loving 
+
+
+index: 47 
+sentence: I feel <mask> that I'm having a problem with my photo here in twitter amf!!!...can't see my face! 
+gold: sad 
+pred: worried 
+
+
+index: 279 
+sentence: I feel <mask> that girl a blunt is soooooooo in my thoughts right now. I had an absolutly GREAT day with a few stressors...come home 
+gold: neutral 
+pred: neutral 
+
+
+index: 222 
+sentence: I feel <mask> that people in my house do not know how to close doors 
+gold: worried 
+pred: neutral 
+
+
+index: 478 
+sentence: I feel <mask> that midnight cry.. wish the person I wanted  wanted me right now 
+gold: worried 
+pred: sad 
+
+
+index: 342 
+sentence: I feel <mask> that lyin in bed  up faaaaar too early 
+gold: neutral 
+pred: neutral 
+
+
+index: 85 
+sentence: I feel <mask> that fresh prince and sleepy sleeps my nightly routine gotta go to Dmv early tmrw 
+gold: worried 
+pred: neutral 
+
+
+index: 301 
+sentence: I feel <mask> that I can't believe the Metal Gear Solid song was stolen I'm so disappointed 
+gold: sad 
+pred: sad 
+
+
+index: 289 
+sentence: I feel <mask> that oh no. *hugs* 
+gold: surprised 
+pred: neutral 
+
+
+index: 16 
+sentence: I feel <mask> that agreed 
+gold: loving 
+pred: neutral 
+
+
+index: 378 
+sentence: I feel <mask> that Counting the hours of lost sunshine until the Weekend 
+gold: neutral 
+pred: neutral 
+
+
+index: 254 
+sentence: I feel <mask> that Cute Malay girl came to seemy room for rent - sadly think it was for her guyfreind bit misleading and disappointing LOL 
+gold: sad 
+pred: sad 
+
+
+index: 121 
+sentence: I feel <mask> that Waraku is tasteless and expensive! Portion is so little!!!!! re: waraku 
+gold: hate 
+pred: sad 
+
+
+index: 346 
+sentence: I feel <mask> that looks like i'll never go to the zoo 
+gold: worried 
+pred: neutral 
+
+
+index: 372 
+sentence: I feel <mask> that dbl booooooo for being sick  flippin blows! ... bahaha i kno i dont have many friends on here either. i feel so lame haha 
+gold: sad 
+pred: sad 
+
+
+index: 180 
+sentence: I feel <mask> that Have a headache I'm going to bed. Goodnight! 
+gold: empty 
+pred: neutral 
+
+
+index: 108 
+sentence: I feel <mask> that ahh! big scary bug flying around my room!!!!! 
+gold: worried 
+pred: worried 
+
+
+index: 415 
+sentence: I feel <mask> that hmmm  I thought u were sleeping!! Too bad I can't see those videos until tomorrow night. 
+gold: worried 
+pred: worried 
+
+
+index: 120 
+sentence: I feel <mask> that Well it almost was a good day... Guess I just retry tomorrow 
+gold: neutral 
+pred: neutral 
+
+
+index: 130 
+sentence: I feel <mask> that claire love the show  got into the office am and no radio 
+gold: neutral 
+pred: loving 
+
+
+index: 30 
+sentence: I feel <mask> that It is so annoying when she starts typing on her computer in the middle of the night! 
+gold: hate 
+pred: worried 
+
+
+index: 450 
+sentence: I feel <mask> that The link doesn't work 
+gold: neutral 
+pred: neutral 
+
+
+index: 265 
+sentence: I feel <mask> that Driving Back home because I forgot the piece of cake for 
+gold: neutral 
+pred: neutral 
+
+
+index: 497 
+sentence: I feel <mask> that tee we beefin....what was u supposed to do before leavin???? 
+gold: surprised 
+pred: neutral 
+
+
+index: 284 
+sentence: I feel <mask> that -man Ulduar is hard... 
+gold: neutral 
+pred: neutral 
+
+
+index: 308 
+sentence: I feel <mask> that I spilled my beer all over my leg. Wasted half my beer. Home now. I met a cute girl. Good conversation. 
+gold: happy 
+pred: neutral 
+
+
+index: 405 
+sentence: I feel <mask> that I'm back. top molar extracted swollen face  all numb. But no more toothache or sinus pain. 
+gold: worried 
+pred: relieved 
+
+
+index: 113 
+sentence: I feel <mask> that shift time bbye biochem waaaaahhhhhh!! 
+gold: neutral 
+pred: neutral 
+
+
+index: 421 
+sentence: I feel <mask> that jealous it looks like schindler's list in toronto 
+gold: worried 
+pred: neutral 
+
+
+index: 49 
+sentence: I feel <mask> that wnna take a bath!!!! 
+gold: neutral 
+pred: neutral 
+
+
+index: 361 
+sentence: I feel <mask> that Taylor Swift and Joe Jonas looked really good together. I'm kinda sad they broke up. 
+gold: sad 
+pred: sad 
+
+
+index: 147 
+sentence: I feel <mask> that I'm at work 
+gold: relieved 
+pred: neutral 
+
+
+index: 149 
+sentence: I feel <mask> that Morning tweeple way to early again 
+gold: neutral 
+pred: neutral 
+
+
+index: 406 
+sentence: I feel <mask> that just finished hours of Texas Life Insurance CE tonight  more hours to go 
+gold: relieved 
+pred: neutral 
+
+
+index: 14 
+sentence: I feel <mask> that Got the news 
+gold: surprised 
+pred: neutral 
+
+
+index: 197 
+sentence: I feel <mask> that why are plane tickets so expensive 
+gold: worried 
+pred: neutral 
+
+
+index: 479 
+sentence: I feel <mask> that I'ma need you to follow me real quick cause I can't DM you 
+gold: neutral 
+pred: neutral 
+
+
+index: 205 
+sentence: I feel <mask> that happy birthdayyy! hope you have an awesome day. didn't see you at next last night! 
+gold: neutral 
+pred: happy 
+
+
+index: 367 
+sentence: I feel <mask> that Found my book. Starting a real paper-bound journal tonight. Have an annoying zit above my lip. Makes me look like I have herpes 
+gold: sad 
+pred: worried 
+
+
+index: 216 
+sentence: I feel <mask> that I'm so very tired...and have insomnia. 
+gold: hate 
+pred: worried 
+
+
+index: 429 
+sentence: I feel <mask> that if one people did any wrong  the world blames all the people over there  this is the great world which we are living in! Shit! 
+gold: sad 
+pred: hate 
+
+
+index: 175 
+sentence: I feel <mask> that i don't think so. I WANT DETAILS. 
+gold: neutral 
+pred: neutral 
+
+
+index: 317 
+sentence: I feel <mask> that Hope I get a job cuz we need an apartment. I'm drunk ; miss my lil punkin TEHE!!! 
+gold: worried 
+pred: sad 
+
+
+index: 124 
+sentence: I feel <mask> that youstinkatrespondingtotexts! 
+gold: hate 
+pred: neutral 
+
+
+index: 260 
+sentence: I feel <mask> that Im sorry I don't think I stick out  at least compared to what I used to look like. 
+gold: surprised 
+pred: sad 
+
+
+index: 69 
+sentence: I feel <mask> that So great to see Oin ; Cynthia. So happy. Dinner was great  cute little place. Too bad Oin got sick afterwards. 
+gold: happy 
+pred: happy 
+
+
+index: 166 
+sentence: I feel <mask> that I've given up on pizza - kids would never let me have my fav (the hot ones) 
+gold: sad 
+pred: sad 
+
+
+index: 145 
+sentence: I feel <mask> that i cant do anything 
+gold: worried 
+pred: neutral 
+
+
+index: 327 
+sentence: I feel <mask> that im contacting PAWS Philippines so i can find &quot;tiger&quot; a new owner. im so sad. i love my dog soo much 
+gold: sad 
+pred: sad 
+
+
+index: 437 
+sentence: I feel <mask> that my stomach feels like it's touching the ground..i'm SO full 
+gold: worried 
+pred: worried 
+
+
+index: 498 
+sentence: I feel <mask> that Sometimes the things you say hurt the ones you love most unintentionally. And you can never ever take it back or fix it. 
+gold: sad 
+pred: sad 
+
+
+index: 157 
+sentence: I feel <mask> that oh men!!!!!!......I really can't see my face........c'mon guys!!! 
+gold: worried 
+pred: worried 
+
+
+index: 295 
+sentence: I feel <mask> that ugh.. my dad just told me to read an article about Kavya Shivashankar the spellin bee girl..and be more like her. 
 gold: neutral 
 pred: neutral 
 
@@ -106,892 +748,22 @@ gold: worried
 pred: worried 
 
 
-index: 275 
-sentence: I feel <mask> that I haven't seen Muffin in two whole days! 
-gold: sad 
-pred: worried 
-
-
-index: 199 
-sentence: I feel <mask> that Needs a job BADLY!!! 
-gold: worried 
-pred: worried 
-
-
-index: 254 
-sentence: I feel <mask> that Cute Malay girl came to seemy room for rent - sadly think it was for her guyfreind bit misleading and disappointing LOL 
-gold: sad 
-pred: sad 
-
-
-index: 490 
-sentence: I feel <mask> that Can't sleep and nothings on tv!! 
-gold: neutral 
-pred: bored 
-
-
-index: 67 
-sentence: I feel <mask> that i fell asleep on the beach and didn't put on enough sunscreen lol 
-gold: sad 
-pred: worried 
-
-
-index: 73 
-sentence: I feel <mask> that says I miss plurking. 
-gold: neutral 
-pred: hate 
-
-
-index: 66 
-sentence: I feel <mask> that ia so much! i haven't really been happy with any of cooks choices for singles. 
-gold: worried 
-pred: neutral 
-
-
-index: 78 
-sentence: I feel <mask> that is sad that shin ae got married...and it wasn't to alex 
-gold: worried 
-pred: worried 
-
-
-index: 223 
-sentence: I feel <mask> that Why am I completing facebook quizzes at this time of the morning... especially a friday morning 
-gold: surprised 
-pred: worried 
-
-
-index: 63 
-sentence: I feel <mask> that in all honesty...pain blech. 
-gold: sad 
-pred: neutral 
-
-
-index: 427 
-sentence: I feel <mask> that for the gays i only made tonight 
-gold: neutral 
-pred: hate 
-
-
-index: 274 
-sentence: I feel <mask> that I have forgot the live with the Jonas Brothers on Facebook 
-gold: worried 
-pred: worried 
-
-
-index: 281 
-sentence: I feel <mask> that Just found mj mouse flats at DJs. Of course there are none left in my size 
-gold: sad 
-pred: empty 
-
-
-index: 253 
-sentence: I feel <mask> that no im not cries LOL 
-gold: neutral 
-pred: happy 
-
-
-index: 295 
-sentence: I feel <mask> that ugh.. my dad just told me to read an article about Kavya Shivashankar the spellin bee girl..and be more like her. 
-gold: neutral 
-pred: neutral 
-
-
-index: 483 
-sentence: I feel <mask> that If I told you how often I wash my hair you would never speak to me again 
-gold: worried 
-pred: neutral 
-
-
-index: 414 
-sentence: I feel <mask> that oh how i wish you would get her to sign something then send it to me or let me call you when you meet or something 
-gold: worried 
-pred: worried 
-
-
-index: 140 
-sentence: I feel <mask> that - Awe! I miss my baby 
-gold: neutral 
-pred: empty 
-
-
-index: 368 
-sentence: I feel <mask> that RATT ROCKED NASHVILLE TONITE..ONE THING SUCKED  NO ENCORE! LIKE IN THE 'S THEY STILL HAVE A FUN SHOW. PEARCY HAS THAT HOTT BAD BOY LOOK 
-gold: hate 
-pred: hate 
-
-
-index: 284 
-sentence: I feel <mask> that -man Ulduar is hard... 
-gold: neutral 
-pred: neutral 
-
-
-index: 97 
-sentence: I feel <mask> that feels sad coz i wasnt able to play with the guys!!! 
-gold: sad 
-pred: sad 
-
-
-index: 171 
-sentence: I feel <mask> that We hate change  so of course. We're fans for life. &lt;3 Oh and if we haven't met Rob by then something went horribly wrong. 
-gold: sad 
-pred: hate 
-
-
-index: 298 
-sentence: I feel <mask> that YEA I GOTTA BE UP AT :30 
-gold: neutral 
-pred: worried 
-
-
-index: 443 
-sentence: I feel <mask> that what a bad day 
-gold: sad 
-pred: neutral 
-
-
-index: 478 
-sentence: I feel <mask> that midnight cry.. wish the person I wanted  wanted me right now 
-gold: worried 
-pred: empty 
-
-
-index: 303 
-sentence: I feel <mask> that Not one sale done today at work. Explored balconies in the big theater w coworkers. A fun day  but void of chili fries and tips 
-gold: neutral 
-pred: sad 
-
-
-index: 291 
-sentence: I feel <mask> that i knoww things won't be the samee &lt;/3 
-gold: sad 
-pred: worried 
-
-
-index: 88 
-sentence: I feel <mask> that I can't sleep...I keep thinking about the puppy I played with today 
-gold: worried 
-pred: worried 
-
-
-index: 136 
-sentence: I feel <mask> that Just cross 'cause I'm stuck twiddling my thumbs now  ugh 
-gold: sad 
-pred: neutral 
-
-
-index: 156 
-sentence: I feel <mask> that where are all ma bestfriends at ?   MIA or wat ? 
-gold: neutral 
-pred: empty 
-
-
-index: 264 
-sentence: I feel <mask> that twittascope is NOT rocking my socks - go away already!! 
-gold: neutral 
-pred: neutral 
-
-
-index: 397 
-sentence: I feel <mask> that love the song &quot;together&quot;. that's &quot;his&quot; song for me...well i think it's still is 
-gold: loving 
-pred: loving 
-
-
-index: 497 
-sentence: I feel <mask> that tee we beefin....what was u supposed to do before leavin???? 
-gold: surprised 
-pred: worried 
-
-
-index: 60 
-sentence: I feel <mask> that at once haha. poor aby still gets sore! 
-gold: worried 
-pred: neutral 
-
-
-index: 358 
-sentence: I feel <mask> that in -11 w/o you 
-gold: neutral 
-pred: worried 
-
-
-index: 214 
-sentence: I feel <mask> that I'm sorry to hear that. Here is my optimist: Things will get better. For all of us. 
-gold: sad 
-pred: sad 
-
-
-index: 49 
-sentence: I feel <mask> that wnna take a bath!!!! 
-gold: neutral 
-pred: neutral 
-
-
-index: 395 
-sentence: I feel <mask> that Must... have... new music... I won't sleep until you give us Chapter ... I might die first though... Hurry! 
-gold: happy 
-pred: worried 
-
-
-index: 198 
-sentence: I feel <mask> that () Umm yeah. That's probably a pretty good note to self because eeeeee 
-gold: funny 
-pred: happy 
-
-
-index: 206 
-sentence: I feel <mask> that im doing that shit right now ... im on vacation and you got me workin 
-gold: hate 
-pred: neutral 
-
-
-index: 32 
-sentence: I feel <mask> that I missed the bl***y bus!!!!!!!! 
-gold: neutral 
-pred: hate 
-
-
-index: 448 
-sentence: I feel <mask> that is feeling so giddy and wanna go home. 
-gold: worried 
-pred: happy 
-
-
-index: 159 
-sentence: I feel <mask> that my sole supporter is not my sole supporter 
-gold: worried 
-pred: worried 
-
-
-index: 491 
-sentence: I feel <mask> that The pics I just uploaded are the baby pics of my cats. Missy is now an adult and a pretty little kitty  but Batty is in kitten heaven now 
-gold: loving 
-pred: loving 
-
-
-index: 255 
-sentence: I feel <mask> that EpiCentre Wheelock Place  units ; for tourists only. Starting today 
-gold: surprised 
-pred: neutral 
-
-
-index: 5 
-sentence: I feel <mask> that Re-pinging : why didn't you go to prom? BC my bf didn't like my friends 
-gold: worried 
-pred: neutral 
-
-
-index: 147 
-sentence: I feel <mask> that I'm at work 
-gold: relieved 
-pred: hate 
-
-
-index: 251 
-sentence: I feel <mask> that I looove guitars  and playing them. I think they sound magnificent. If only i was better... If only 
-gold: neutral 
-pred: loving 
-
-
-index: 62 
-sentence: I feel <mask> that I want to buy this great album but unfortunately i dont hav enuff funds its &quot;long time noisy&quot; 
-gold: sad 
-pred: worried 
-
-
-index: 105 
-sentence: I feel <mask> that Damn  that sucks 
-gold: hate 
-pred: neutral 
-
-
-index: 95 
-sentence: I feel <mask> that hiii im on my ipod...i cant fall asleep 
-gold: sad 
-pred: worried 
-
-
-index: 403 
-sentence: I feel <mask> that my dog ran awayyy 
-gold: worried 
-pred: worried 
-
-
-index: 463 
-sentence: I feel <mask> that on jacksonville beach walking in the cold Ass water but have to work in the morning ily &lt'-')&gt; 
-gold: hate 
-pred: hate 
-
-
-index: 2 
-sentence: I feel <mask> that Funeral ceremony...gloomy friday... 
-gold: sad 
-pred: empty 
-
-
-index: 263 
-sentence: I feel <mask> that Lies...lies...lies....you just cant avoid to lie about practically...EVERYTHING! 
-gold: hate 
-pred: hate 
-
-
-index: 242 
-sentence: I feel <mask> that sometimes i wish things could go back to the way they were the beginning of last summer 
-gold: sad 
-pred: worried 
-
-
-index: 294 
-sentence: I feel <mask> that Okay  so twitter suddenly changed  how do I respond to messages now 
-gold: worried 
-pred: neutral 
-
-
-index: 163 
-sentence: I feel <mask> that I miss my puppy 
-gold: sad 
-pred: worried 
-
-
-index: 449 
-sentence: I feel <mask> that the week just wasnt the same without an adam lambert performance!!! 
-gold: neutral 
-pred: empty 
-
-
-index: 465 
-sentence: I feel <mask> that i feel the same way every day 
-gold: sad 
-pred: bored 
-
-
-index: 93 
-sentence: I feel <mask> that work at am. Gotta go to bed soon 
-gold: neutral 
-pred: worried 
-
-
-index: 430 
-sentence: I feel <mask> that nope. they are all sleeping cuz they live on the east coast. 
-gold: surprised 
-pred: neutral 
-
-
-index: 106 
-sentence: I feel <mask> that i wanted to come to BZ this summer not so sure anymore... a teacher's life in the summer SUCKS 
-gold: sad 
-pred: worried 
-
-
-index: 108 
-sentence: I feel <mask> that ahh! big scary bug flying around my room!!!!! 
-gold: worried 
-pred: neutral 
-
-
-index: 195 
-sentence: I feel <mask> that Ate Mandy  please forgive me. I really am sorry. I don't wanna lose my Bff 
-gold: worried 
-pred: hate 
-
-
-index: 38 
-sentence: I feel <mask> that has work this afternoon 
-gold: neutral 
-pred: worried 
-
-
-index: 297 
-sentence: I feel <mask> that Going to sleep. Gonna fall asleep playing apps again. Tmrw is going to suck 
-gold: sad 
-pred: neutral 
-
-
-index: 56 
-sentence: I feel <mask> that bed...sorta. today was good  sara has strep thought Angelina does to; i shared a water with her B4 they told me  i will prob get it to 
-gold: enthusiastic 
-pred: neutral 
-
-
-index: 329 
-sentence: I feel <mask> that Aww... Pray for the arroyo family everyone! 
-gold: worried 
-pred: worried 
-
-
-index: 339 
-sentence: I feel <mask> that I need to be sleeping.. But i'm not even tired.. 
-gold: empty 
-pred: empty 
-
-
-index: 15 
-sentence: I feel <mask> that The storm is here and the electricity is gone 
-gold: sad 
-pred: neutral 
-
-
-index: 54 
-sentence: I feel <mask> that no way! damn that sucks B! are you ok? 
-gold: neutral 
-pred: neutral 
-
-
-index: 131 
-sentence: I feel <mask> that Pats in philly at am. I love it. Mmm cheesesteak. Miss my boyfriend but I love vacation. 
-gold: loving 
-pred: loving 
-
-
-index: 246 
-sentence: I feel <mask> that I Can`t do minutes of Treadmill but done minutes for today already  gonna do minutes more 
-gold: happy 
-pred: happy 
-
-
-index: 318 
-sentence: I feel <mask> that just got home! not wanting to read the last chaper of breaking dawn cause i dont want it to beover 
-gold: worried 
-pred: worried 
-
-
-index: 344 
-sentence: I feel <mask> that I dont feel good AT ALL. fuckkk 
-gold: sad 
-pred: neutral 
-
-
-index: 495 
-sentence: I feel <mask> that is really  really bored... I guess I will go to bed 
-gold: bored 
-pred: empty 
-
-
-index: 363 
-sentence: I feel <mask> that Lady across the way had a miscarriage  say a prayer 
-gold: worried 
-pred: worried 
-
-
-index: 258 
-sentence: I feel <mask> that not super keen on the drive home through the rain.. additional concentration required that i don't really wanna deal with 
-gold: worried 
-pred: neutral 
-
-
-index: 74 
-sentence: I feel <mask> that Bitten to blood by my cat  on my way for a rabies bacterin. Seems shots for months. Never wash my cats at home again  they hate water 
-gold: worried 
-pred: neutral 
-
-
-index: 145 
-sentence: I feel <mask> that i cant do anything 
-gold: worried 
-pred: neutral 
-
-
-index: 304 
-sentence: I feel <mask> that I wish I had Left Dead. But first I'd need something to play it on... 
-gold: sad 
-pred: worried 
-
-
-index: 92 
-sentence: I feel <mask> that Last one month due to summer  strawberry is not availble in the Chennai markets! 
-gold: worried 
-pred: worried 
-
-
-index: 79 
-sentence: I feel <mask> that Sure you will tweet about this when you're back  but news is abuzz about TR Knight's leaving &quot;confirmed&quot; today. Muy triste. 
-gold: worried 
-pred: neutral 
-
-
-index: 43 
-sentence: I feel <mask> that Why do I have the feeling I should be packing and hitting for SFO around this time of the year? I think I'm missing something... 
-gold: worried 
-pred: worried 
-
-
-index: 260 
-sentence: I feel <mask> that Im sorry I don't think I stick out  at least compared to what I used to look like. 
-gold: surprised 
-pred: hate 
-
-
-index: 445 
-sentence: I feel <mask> that hates the net. ayaw bumukas ng twitter. 
-gold: hate 
-pred: neutral 
-
-
-index: 352 
-sentence: I feel <mask> that I'm a bit Ben's Thai-ed out 
-gold: neutral 
-pred: worried 
-
-
-index: 348 
-sentence: I feel <mask> that When will Medhurst play again? 
-gold: neutral 
-pred: worried 
-
-
-index: 22 
-sentence: I feel <mask> that No Topic Maps talks at the Balisage Markup Conference Program online at (via ) topic maps 
-gold: neutral 
-pred: worried 
-
-
-index: 130 
-sentence: I feel <mask> that claire love the show  got into the office am and no radio 
-gold: neutral 
-pred: loving 
-
-
-index: 14 
-sentence: I feel <mask> that Got the news 
-gold: surprised 
-pred: neutral 
-
-
-index: 143 
-sentence: I feel <mask> that Achieving a new appreciation on how a xml build script can really be painful and cumbersome 
-gold: worried 
-pred: neutral 
-
-
-index: 469 
-sentence: I feel <mask> that So have a headache right now and it sucks 
-gold: sad 
-pred: neutral 
-
-
-index: 151 
-sentence: I feel <mask> that thanks neemah. I'm gonna be soooo close to you and izzy  yet so far 
-gold: loving 
-pred: loving 
-
-
-index: 410 
-sentence: I feel <mask> that I'm awake. Anybody else awake? Wish I lived in the US since all the fun happens when I'm asleep! 
-gold: sad 
-pred: worried 
-
-
-index: 7 
-sentence: I feel <mask> that Hmmm. is down 
-gold: worried 
-pred: worried 
-
-
-index: 175 
-sentence: I feel <mask> that i don't think so. I WANT DETAILS. 
-gold: neutral 
-pred: worried 
-
-
-index: 231 
-sentence: I feel <mask> that back from school. Ms Suhana's last day as our FT OCU was okay. I'm playing ALTNOY over and over again. 
-gold: neutral 
-pred: hate 
-
-
-index: 133 
-sentence: I feel <mask> that What? I focused on Tom so much I didn't see my beloved Barack! Oh no! I must vote for both! Poor president only has votes. 
-gold: neutral 
-pred: neutral 
-
-
 index: 296 
 sentence: I feel <mask> that Decided that no matter how good my hair looks curly it doesn't justify the burn I get from the curler! My hands covered I suck at it! 
 gold: worried 
-pred: neutral 
-
-
-index: 279 
-sentence: I feel <mask> that girl a blunt is soooooooo in my thoughts right now. I had an absolutly GREAT day with a few stressors...come home 
-gold: neutral 
-pred: neutral 
-
-
-index: 218 
-sentence: I feel <mask> that airport? and you didnt show up tonight homo! 
-gold: neutral 
-pred: neutral 
-
-
-index: 91 
-sentence: I feel <mask> that How can it be so freaking difficult to get a system-wide spellchecker? Shit  I'd settle for an office suite one. Stupid unhelpful Windows 
-gold: neutral 
-pred: neutral 
-
-
-index: 417 
-sentence: I feel <mask> that went to the beach and it started raining 
-gold: empty 
-pred: hate 
-
-
-index: 216 
-sentence: I feel <mask> that I'm so very tired...and have insomnia. 
-gold: hate 
-pred: worried 
-
-
-index: 422 
-sentence: I feel <mask> that I want another tatt 
-gold: enthusiastic 
-pred: neutral 
-
-
-index: 440 
-sentence: I feel <mask> that Sooo much work so little time 
-gold: worried 
-pred: worried 
-
-
-index: 150 
-sentence: I feel <mask> that Last day working for the Uni today  sad times 
-gold: sad 
 pred: sad 
 
 
-index: 71 
-sentence: I feel <mask> that ...and all woman who transfer their first impressions (sexual/maternal) onto a less 'threatening' man -- are themselves as weak as 'Him' 
-gold: worried 
-pred: neutral 
-
-
-index: 267 
-sentence: I feel <mask> that Everytime I send an email to my coach  I feel a need to practice. shitty balls. Lol 
+index: 119 
+sentence: I feel <mask> that Allergies suck ducks nuts. &lt;=====8=====&gt; 
 gold: sad 
 pred: neutral 
 
 
-index: 353 
-sentence: I feel <mask> that english class! working on interactive orals 
-gold: happy 
-pred: worried 
-
-
-index: 498 
-sentence: I feel <mask> that Sometimes the things you say hurt the ones you love most unintentionally. And you can never ever take it back or fix it. 
-gold: sad 
-pred: hate 
-
-
-index: 9 
-sentence: I feel <mask> that I'm sorry at least it's Friday? 
-gold: sad 
-pred: relieved 
-
-
-index: 154 
-sentence: I feel <mask> that New work wellness challenge not going well. I committed to not check email between pm and am. Failed on first day. Twice 
-gold: worried 
-pred: neutral 
-
-
-index: 473 
-sentence: I feel <mask> that comfort food of the day: pan mee. though  it didnt taste any good.. 
-gold: sad 
-pred: empty 
-
-
-index: 160 
-sentence: I feel <mask> that don't you hate it when you finish all your work and there's still hours left of work time 
-gold: hate 
-pred: neutral 
-
-
-index: 276 
-sentence: I feel <mask> that i'll miss y'all back... give my regards... 
-gold: sad 
-pred: worried 
-
-
-index: 306 
-sentence: I feel <mask> that that story reminds of living in Portugal 
-gold: neutral 
-pred: worried 
-
-
-index: 437 
-sentence: I feel <mask> that my stomach feels like it's touching the ground..i'm SO full 
-gold: worried 
-pred: neutral 
-
-
-index: 332 
-sentence: I feel <mask> that ALO is so sad and quiet and empty tonight 
-gold: sad 
-pred: empty 
-
-
-index: 323 
-sentence: I feel <mask> that omg i keep losing followers this is so sad i want one day....thats my goal 
-gold: sad 
-pred: sad 
-
-
-index: 322 
-sentence: I feel <mask> that wicked   what time you leaving? how come you cant stay the night 
-gold: neutral 
-pred: worried 
-
-
-index: 336 
-sentence: I feel <mask> that Aw where are you headed to? i just cancelled my trip to Aussie 
-gold: sad 
-pred: empty 
-
-
-index: 186 
-sentence: I feel <mask> that but now i have no money for a phone 
-gold: sad 
-pred: neutral 
-
-
-index: 407 
-sentence: I feel <mask> that does anyone know any good rap songs? i need to make a rap/fun cd and i have no idea helllllpppp 
+index: 362 
+sentence: I feel <mask> that I'm suppose to turn in a sentence outline for my research paper within the hour online but my neck hurts. 
 gold: worried 
 pred: worried 
-
-
-index: 58 
-sentence: I feel <mask> that But I got dibs on Sulu... 
-gold: neutral 
-pred: neutral 
-
-
-index: 129 
-sentence: I feel <mask> that $! My nose stud fell out and I can't find it Looks like I'll have to head into Amsterdam today and get a new one 
-gold: worried 
-pred: worried 
-
-
-index: 285 
-sentence: I feel <mask> that I don't even want to know WHY you know about VHEMT  but don't go - we'd miss you 
-gold: worried 
-pred: worried 
-
-
-index: 87 
-sentence: I feel <mask> that i am jealous of your mom talking to . i want to see you all our twittering is making me miss you 
-gold: worried 
-pred: worried 
-
-
-index: 467 
-sentence: I feel <mask> that well i just got home and its not on till tmw at p but with comcast its on right now but i didnt miss it 
-gold: neutral 
-pred: happy 
-
-
-index: 311 
-sentence: I feel <mask> that yeahhh. nt judge my pillow 
-gold: neutral 
-pred: neutral 
-
-
-index: 194 
-sentence: I feel <mask> that when da heck will the garage man get here I ask you.. WHEN.. 
-gold: surprised 
-pred: neutral 
-
-
-index: 36 
-sentence: I feel <mask> that yeah i feel all funny cause i haven't slept enough i woke my mum up cause i was singing she's not impressed you? 
-gold: sad 
-pred: neutral 
-
-
-index: 432 
-sentence: I feel <mask> that eww. dislike 
-gold: sad 
-pred: neutral 
-
-
-index: 452 
-sentence: I feel <mask> that GOSSIP GIRL  WHEN ARE YOU COMING BACK ! chaceeeeeee.. 
-gold: neutral 
-pred: worried 
-
-
-index: 496 
-sentence: I feel <mask> that I met a stranger just min ago. He was stalking me at the store 
-gold: worried 
-pred: loving 
-
-
-index: 233 
-sentence: I feel <mask> that took a math test today. The day before the test  the teacher says bring your calculator. Luke was confident. Teacher decided no calcs. 
-gold: happy 
-pred: worried 
-
-
-index: 165 
-sentence: I feel <mask> that Up is out? I didn't get the memo It looks amazing. 
-gold: funny 
-pred: neutral 
-
-
-index: 179 
-sentence: I feel <mask> that OMG Ur alive!!! LOL day has gone sooo slow I'm going insane Grrr You doing anything tonight? 
-gold: funny 
-pred: worried 
-
-
-index: 1 
-sentence: I feel <mask> that Layin n bed with a headache ughhhh...waitin on your call... 
-gold: sad 
-pred: bored 
-
-
-index: 480 
-sentence: I feel <mask> that I'm poorly and can't sleep 
-gold: sad 
-pred: worried 
-
-
-index: 367 
-sentence: I feel <mask> that Found my book. Starting a real paper-bound journal tonight. Have an annoying zit above my lip. Makes me look like I have herpes 
-gold: sad 
-pred: worried 
-
-
-index: 330 
-sentence: I feel <mask> that there's a manual process... but it's taking ever on my outlook database... pffff. crappy msft product 
-gold: neutral 
-pred: neutral 
-
-
-index: 374 
-sentence: I feel <mask> that Peeps still here. Fun times. Gotta sleep tho. Work in the A.M. Some cool  hot chicks here. But none as cool as ____________. Missing her 
-gold: neutral 
-pred: worried 
-
-
-index: 384 
-sentence: I feel <mask> that I have to work in the morning while my friends get to party it up.....stupid bberry lite flashing red and I have no messages! 
-gold: hate 
-pred: hate 
-
-
-index: 185 
-sentence: I feel <mask> that Took a shift tomorrow. I don't really feel like working right now. 
-gold: sad 
-pred: bored 
-
-
-index: 94 
-sentence: I feel <mask> that correct! I ADORE him. I just plucked him up and put him under my arm cuz he was cryin. All better now! Hahaha 
-gold: loving 
-pred: loving 
 
 
 index: 29 
@@ -1000,81 +772,69 @@ gold: worried
 pred: hate 
 
 
-index: 35 
-sentence: I feel <mask> that Screw you ! I only have weeks... 
+index: 50 
+sentence: I feel <mask> that Chocolate milk is so much better through a straw. I lack said straw 
 gold: neutral 
-pred: worried 
+pred: neutral 
 
 
-index: 249 
-sentence: I feel <mask> that Work day of 
+index: 334 
+sentence: I feel <mask> that You never answered your DM I sent you.... I need your info... 
 gold: worried 
-pred: relieved 
+pred: neutral 
+
+
+index: 364 
+sentence: I feel <mask> that God I just want to sleep. 
+gold: sad 
+pred: neutral 
 
 
 index: 34 
 sentence: I feel <mask> that SoCal! stoked. or maybe not.. tomorrow 
 gold: neutral 
-pred: happy 
+pred: neutral 
 
 
-index: 76 
-sentence: I feel <mask> that Neither are ELP!! 
+index: 176 
+sentence: I feel <mask> that Hi...!!! Who is Mary Poppins??? 
 gold: neutral 
 pred: neutral 
 
 
-index: 172 
-sentence: I feel <mask> that is feeling sad... for some reason.. 
-gold: worried 
-pred: empty 
-
-
-index: 207 
-sentence: I feel <mask> that ill be over in an oir 
-gold: neutral 
-pred: hate 
-
-
-index: 222 
-sentence: I feel <mask> that people in my house do not know how to close doors 
-gold: worried 
-pred: worried 
-
-
-index: 387 
-sentence: I feel <mask> that hahaha I don't know anyone or anything about it except they have powers lol... I live in my own bubble 
-gold: neutral 
-pred: happy 
-
-
-index: 324 
-sentence: I feel <mask> that I feel so deflated. No more doggy. 
+index: 499 
+sentence: I feel <mask> that that sucks! 
 gold: sad 
 pred: sad 
 
 
-index: 468 
-sentence: I feel <mask> that Sleppytime. Really missing my godfather right now. Love you Wayne 
+index: 242 
+sentence: I feel <mask> that sometimes i wish things could go back to the way they were the beginning of last summer 
 gold: sad 
-pred: loving 
+pred: sad 
 
 
-index: 187 
-sentence: I feel <mask> that Spent last night in A;E (ER). Wife tangled wheels with Daughter ; hit the deck. Dislocation ; fracture resulted. 
-gold: worried 
-pred: neutral 
-
-
-index: 485 
-sentence: I feel <mask> that - WHY DO U LOT MOCK ME!!! 
-gold: worried 
-pred: neutral 
-
-
-index: 181 
-sentence: I feel <mask> that I was watching Parental Control 
+index: 271 
+sentence: I feel <mask> that i was so close to the tacos...one spot too late 
 gold: neutral 
-pred: worried 
+pred: neutral 
+
+
+index: 230 
+sentence: I feel <mask> that oh no i am always here &lt;3 
+gold: worried 
+pred: neutral 
+
+
+index: 390 
+sentence: I feel <mask> that i feel like I'm on house arrest. 
+gold: worried 
+pred: neutral 
+
+
+index: 441 
+sentence: I feel <mask> that missed iron chef 
+gold: sad 
+pred: neutral 
 
 

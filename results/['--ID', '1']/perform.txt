@@ -1,95 +1,10 @@
 0
-loss: 2.543259620666504
-acc: 0.08888889104127884
-best epch: 0, best acc 0.09
+loss: 1.796
+acc: 0.429
+best epch: 0, best acc 0.43
 
 1
-loss: 2.2377214431762695
-acc: 0.1666666716337204
-best epch: 1, best acc 0.17
-
-2
-loss: 1.8744690418243408
-acc: 0.2222222238779068
-best epch: 2, best acc 0.22
-
-3
-loss: 1.8917218446731567
-acc: 0.23333333432674408
-best epch: 3, best acc 0.23
-
-4
-loss: 1.709040880203247
-acc: 0.23333333432674408
-best epch: 4, best acc 0.23
-
-5
-loss: 1.6926584243774414
-acc: 0.2777777910232544
-best epch: 5, best acc 0.28
-
-6
-loss: 1.6294865608215332
-acc: 0.23888888955116272
-best epch: 6, best acc 0.24
-
-7
-loss: 1.6355228424072266
-acc: 0.21666666865348816
-best epch: 7, best acc 0.22
-
-8
-loss: 1.4853278398513794
-acc: 0.21666666865348816
-best epch: 8, best acc 0.22
-
-9
-loss: 1.3758320808410645
-acc: 0.18888889253139496
-best epch: 9, best acc 0.19
-
-10
-loss: 1.3313978910446167
-acc: 0.31111112236976624
-best epch: 10, best acc 0.31
-
-11
-loss: 1.3109575510025024
-acc: 0.25
-best epch: 11, best acc 0.25
-
-12
-loss: 1.3259669542312622
-acc: 0.18333333730697632
-best epch: 12, best acc 0.18
-
-13
-loss: 1.273969292640686
-acc: 0.25555557012557983
-best epch: 13, best acc 0.26
-
-14
-loss: 1.0759183168411255
-acc: 0.1944444477558136
-best epch: 14, best acc 0.19
-
-15
-loss: 0.8690758943557739
-acc: 0.1944444477558136
-best epch: 15, best acc 0.19
-
-16
-loss: 1.1656615734100342
-acc: 0.23888888955116272
-best epch: 16, best acc 0.24
-
-17
-loss: 0.8615180850028992
-acc: 0.23888888955116272
-best epch: 17, best acc 0.24
-
-18
-loss: 0.874817430973053
-acc: 0.18333333730697632
-best epch: 18, best acc 0.18
+loss: 1.842
+acc: 0.414
+best epch: 0, best acc 0.43
 
