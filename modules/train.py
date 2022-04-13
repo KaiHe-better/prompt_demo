@@ -89,7 +89,7 @@ class My_Train_Framework:
                     # break
                 
             train_acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num)
-            valid_acc, input_list, target_list, epoch_pred_list = self.eval("Valid", epoch_num)
+            valid_acc, input_list, target_list, epoch_pred_id_list = self.eval("Valid", epoch_num)
             
             print("\n")
             if valid_acc > best_acc:
@@ -100,16 +100,16 @@ class My_Train_Framework:
                 print("epoch: {0:s}, train acc: {1:.2f}, valid acc {2:.2f}".format(str(best_epoch), train_acc.item(), best_acc.item()))
                 print("\n")
                 torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path)
-                self.recored_res(input_list, target_list, epoch_pred_list)
+                self.recored_res(input_list, target_list, epoch_pred_id_list)
             
             with open(self.res_path+"/"+"perform.txt", "a") as f:
                 f.write(str(epoch_num))
                 f.write("\n")
-                f.write("loss: {}".format(str(dic_res["loss"].item())))
+                f.write("loss: {}".format(str(round(dic_res["loss"].item(), 3))))
                 f.write("\n")
-                f.write("acc: {}".format(str(valid_acc.item())))
+                f.write("acc: {}".format(str(round(valid_acc.item(), 3))))
                 f.write("\n")
-                f.write("best epch: {}, best acc {}".format(str(epoch_num), str(round(valid_acc.item(), 2))))
+                f.write("best epch: {}, best acc {}".format(str(best_epoch), str(round(best_acc.item(), 2))))
                 f.write("\n")
                 f.write("\n")
                 
@@ -131,12 +131,11 @@ class My_Train_Framework:
         with torch.no_grad():
             with tqdm(total=len(used_data_loader), desc=train_flag, ncols=100) as pbar: 
                 for data_list in used_data_loader:
-                    epoch_gold_list, epoch_pred_id_list, epoch_pred_list, input_list, target_list = [], [], [], [], []
+                    epoch_gold_list, epoch_pred_id_list, input_list, target_list = [], [], [], []
                     my_input, my_target = data_to_device(data_list)
                     dic_res = self.my_model(my_input, my_target)
                     
                     epoch_gold_list.append(torch.gather(my_target["label_ids"], 1, my_target["mask_indexs"].unsqueeze(1)).squeeze(1))
-                    epoch_pred_list.append(dic_res["label_words"])
                     epoch_pred_id_list.append(dic_res["label_words_id"])
                     input_list.append(my_input)
                     target_list.append(my_target)
@@ -145,18 +144,18 @@ class My_Train_Framework:
                     postfix['valid_loss']= '{0:.4f}'.format(dic_res["loss"])
                     pbar.set_postfix(postfix) 
                     pbar.update(1)
-                    break
+                    # break
                     
         if train_flag == "Test":
-            self.recored_res(input_list, target_list, epoch_pred_list)  
+            self.recored_res(input_list, target_list, epoch_pred_id_list)  
                   
         acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num, train_flag)
         self.my_model.train()
-        return acc, input_list, target_list, epoch_pred_list
+        return acc, input_list, target_list, epoch_pred_id_list
     
-    def recored_res(self, input_list, target_list, epoch_pred_list):
+    def recored_res(self, input_list, target_list, epoch_pred_id_list):
         with open(os.path.join(self.res_path, "res.txt"), "w") as f:
-            for my_input, my_target, pred in zip(input_list, target_list, epoch_pred_list):
+            for my_input, my_target, pred in zip(input_list, target_list, epoch_pred_id_list):
                 for index, sentence, gold_item, pred_item in zip(my_input["index"], my_target["raw_sent"], my_target["raw_label"], pred):
                     f.write("index: {} \n".format(index))
                     f.write("sentence: {} \n".format(sentence))

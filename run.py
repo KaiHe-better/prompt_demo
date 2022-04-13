@@ -25,8 +25,7 @@ import sys
 CUDA_LAUNCH_BLOCKING=1
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 os.environ['CUDA_VISIBLE_DEVICES'] = args.GPU
-label_ids_map = OrderedDict({'loving':0, 'hate':1, 'funny':2, 'angery':3, 'relieved':4, 'bored':5, 
-                 'empty':6, 'sad':7, 'happy':8, 'worried':9, 'enthusiastic':10, 'neutral':11, 'surprised':12})
+label_ids_map = ['loving', 'hate', 'funny', 'angery', 'relieved', 'bored', 'empty', 'sad', 'happy', 'worried', 'enthusiastic', 'neutral', 'surprised']
     
 
 if torch.cuda.is_available():

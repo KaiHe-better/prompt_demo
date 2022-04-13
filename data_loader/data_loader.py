@@ -11,11 +11,11 @@ seed(SEED)
 
 
 class My_Dataset(object):
-    def __init__(self, data, max_len, tokenizer, label_ids_map):
+    def __init__(self, data, max_len, tokenizer, label_ids_list):
         self.all_data = data
         self.tokenizer = tokenizer
         self.max_len = max_len
-        self.label_ids_map = label_ids_map
+        self.label_ids_list = label_ids_list
         
     def __len__(self):
         return len(self.all_data)
@@ -24,7 +24,6 @@ class My_Dataset(object):
         raw_data = self.all_data[index].strip()
         raw_id, raw_label, raw_sent  = raw_data.split(" || ")
         
-        raw_label = raw_label[:self.max_len-2]
         split_tokens = self.tokenizer.tokenize(raw_sent)[:self.max_len-2]
         split_tokens.insert(0, self.tokenizer.bos_token) 
         split_tokens.append(self.tokenizer.eos_token)
@@ -32,13 +31,13 @@ class My_Dataset(object):
         pad_tokens = [self.tokenizer.pad_token] *pad_num
         all_tokens = split_tokens+pad_tokens
        
- 
         all_tokens_ids = self.tokenizer.convert_tokens_to_ids(all_tokens)
         attention_mask = [1] * len(split_tokens) + [0]*pad_num
         
         labels = [-100]*self.max_len
         mask_indexs = all_tokens_ids.index(50264)
-        labels[mask_indexs] = self.label_ids_map[raw_label]
+        lab_word = sorted(self.tokenizer.tokenize(raw_label, is_split_into_words=True), key=lambda x:len(x), reverse=True)[0]
+        labels[mask_indexs] = self.tokenizer.convert_tokens_to_ids(lab_word)
         
         return index, all_tokens_ids, attention_mask, labels, mask_indexs, raw_sent, raw_label
 
