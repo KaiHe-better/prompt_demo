@@ -14,8 +14,12 @@ class My_model(nn.Module):
     def __init__(self, label_ids):
         print("PLM loading ...")
         nn.Module.__init__(self)
+        
         self.model = RobertaForMaskedLM.from_pretrained("roberta-base")
         self.tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+        # self.model = RobertaForMaskedLM.from_pretrained("bart-base")
+        # self.tokenizer = RobertaTokenizer.from_pretrained('bart-base')
+        
         self.label_ids = dict(zip(label_ids.values(),label_ids.keys()))
         self.label_ids_map = {}
         for index, id_token in enumerate(label_ids.keys()):

@@ -55,9 +55,9 @@ class My_Train_Framework:
             {'params': [p for n, p in parameters_to_optimize if not any(nd in n for nd in no_decay)], 'weight_decay': self.args.weight_decay, "lr":self.args.lr},
             {'params': [p for n, p in parameters_to_optimize if any(nd in n for nd in no_decay)], 'weight_decay': 0.0, "lr":self.args.lr} ]
         
-        self.optim = optim.AdamW(parameters_to_optimize)  
-        self.scheduler = get_linear_schedule_with_warmup(self.optim, num_warmup_steps=self.args.warmup_step, 
-                                                                            num_training_steps=len(self.train_data_loader) if self.train_data_loader else 1)
+        self.optim = optim.AdamW(parameters_to_optimize, lr=self.args.lr)  
+        # self.scheduler = get_linear_schedule_with_warmup(self.optim, num_warmup_steps=self.args.warmup_step, 
+        #                                                                     num_training_steps=len(self.train_data_loader) if self.train_data_loader else 1)
         
     def train(self):
         self.__initialize__()
@@ -79,7 +79,8 @@ class My_Train_Framework:
                     self.optim.zero_grad()
                     dic_res["loss"].backward()
                     self.optim.step()
-                    self.scheduler.step()
+                    # self.scheduler.step()
+                    # print(self.optim.param_groups[0]["lr"])
                     
                     postfix= {}
                     postfix['train_loss']=  dic_res["loss"].item()
@@ -87,7 +88,7 @@ class My_Train_Framework:
                     pbar.update(1)
                     # break
                 
-            # train_acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num)
+            train_acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num)
             valid_acc, input_list, target_list, epoch_pred_list = self.eval("Valid", epoch_num)
             
             print("\n")
@@ -96,7 +97,7 @@ class My_Train_Framework:
                 best_epoch = epoch_num
                 count = 0
                 print('Best checkpoint !')
-                print("epoch: {0:s}, acc: {1:.2f}".format(str(best_epoch), best_acc.item()))
+                print("epoch: {0:s}, train acc: {1:.2f}, valid acc {2:.2f}".format(str(best_epoch), train_acc.item(), best_acc.item()))
                 print("\n")
                 torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path)
                 self.recored_res(input_list, target_list, epoch_pred_list)
@@ -108,7 +109,7 @@ class My_Train_Framework:
                 f.write("\n")
                 f.write("acc: {}".format(str(valid_acc.item())))
                 f.write("\n")
-                f.write("best epch: {}, best acc {}".format(str(epoch_num), str(valid_acc.item())))
+                f.write("best epch: {}, best acc {}".format(str(epoch_num), str(round(valid_acc.item(), 2))))
                 f.write("\n")
                 f.write("\n")
                 
