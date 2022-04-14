@@ -35,7 +35,7 @@ else:
 
 def main():
     my_model = My_model(label_ids_map)
-    train_data_loader, val_data_loader, test_data_loader = get_data_loader(·args.batch_size, args.max_len, my_model.tokenizer, my_model.label_ids_list)
+    train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer, my_model.label_ids_list)
     my_training_frame = My_Train_Framework(args, my_model, train_data_loader, val_data_loader, test_data_loader)
     
     my_training_frame.train()

@@ -92,15 +92,17 @@ class My_Train_Framework:
             valid_acc, input_list, target_list, epoch_pred_id_list = self.eval("Valid", epoch_num)
             
             print("\n")
-            if valid_acc > best_acc:
-                best_acc = valid_acc
-                best_epoch = epoch_num
-                count = 0
-                print('Best checkpoint !')
-                print("epoch: {0:s}, train acc: {1:.2f}, valid acc {2:.2f}".format(str(best_epoch), train_acc.item(), best_acc.item()))
-                print("\n")
-                torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path)
-                self.recored_res(input_list, target_list, epoch_pred_id_list)
+            if train_acc.item()>0.95:
+                if valid_acc > best_acc:
+                    best_acc = valid_acc.item()
+                    best_epoch = epoch_num
+                    count = 0
+                    print('Best checkpoint !')
+                    print("epoch: {0:s}, train acc: {1:.2f}, valid acc {2:.2f}".format(str(best_epoch), train_acc.item(), best_acc))
+                    print("\n")
+                
+                    torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path)
+                    self.recored_res(input_list, target_list, epoch_pred_id_list)
             
             with open(self.res_path+"/"+"perform.txt", "a") as f:
                 f.write(str(epoch_num))
@@ -111,14 +113,14 @@ class My_Train_Framework:
                 f.write("\n")
                 f.write("valid acc: {}".format(str(round(valid_acc.item(), 3))))
                 f.write("\n")
-                f.write("best epch: {}, best acc {}".format(str(best_epoch), str(round(best_acc.item(), 2))))
+                f.write("best epch: {}, best acc {}".format(str(best_epoch), str(round(best_acc, 2))))
                 f.write("\n")
                 f.write("\n")
                 
-            if count < self.args.early_stop_num:
-                count+=1
-            else:
-                break
+            # if count < self.args.early_stop_num:
+            #     count+=1
+            # else:
+            #     break
 
         print("Finish !")
         return best_epoch, best_dic_F
@@ -129,11 +131,12 @@ class My_Train_Framework:
             used_data_loader = self.val_data_loader
         else:
             used_data_loader = self.test_data_loader
-        
+            
+        epoch_gold_list, epoch_pred_id_list, input_list, target_list = [], [], [], []
         with torch.no_grad():
             with tqdm(total=len(used_data_loader), desc=train_flag, ncols=100) as pbar: 
                 for data_list in used_data_loader:
-                    epoch_gold_list, epoch_pred_id_list, input_list, target_list = [], [], [], []
+                    
                     my_input, my_target = data_to_device(data_list)
                     dic_res = self.my_model(my_input, my_target)
                     
