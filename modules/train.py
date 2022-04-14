@@ -30,12 +30,12 @@ class My_Train_Framework:
     def __initialize__(self):
         if torch.cuda.is_available():
             self.my_model.cuda()
-        
+            
         # initialize model
         if self.args.load_ckpt_path is not None:
             self.args.load_ckpt_path = "./ckpt/"+str(self.args.load_ckpt_path)
             if os.path.isfile(self.args.load_ckpt_path):
-                state_dict = torch.load(self.args.load_ckpt_path)
+                state_dict = torch.load(self.args.load_ckpt_path, map_location="cuda" if torch.cuda.is_available() else "cpu")
                 print("Successfully loaded checkpoint '%s'" % self.args.load_ckpt_path)
             else:
                 raise Exception("No checkpoint found at '%s'" % self.args.load_ckpt_path)
@@ -92,7 +92,7 @@ class My_Train_Framework:
             valid_acc, input_list, target_list, epoch_pred_id_list = self.eval("Valid", epoch_num)
             
             print("\n")
-            if train_acc.item()>0:
+            if train_acc.item()>0.95:
                 if valid_acc > best_acc:
                     best_acc = valid_acc.item()
                     best_epoch = epoch_num
@@ -181,15 +181,14 @@ class My_Train_Framework:
         print("{0} res:  epoch: {1:s}, acc: {2:.2f}".format(str(train_flag), str(epoch_num), acc.item()))
         return acc
     
-    def infer(self, input_list, prompt):
-        self.__initialize__()
+    def infer(self, input_list, prompt, first_prompt, gold_list=None):
         new_data_list = []
         all_tokens_ids = []
         attention_mask = []
         mask_indexs = []
         raw_sent_list=[]
         for sent in input_list:
-            raw_sent = prompt + " " +sent
+            raw_sent = prompt + " " +sent if first_prompt else sent + " " +prompt
             raw_sent_list.append(raw_sent)
             split_tokens = self.my_model.tokenizer.tokenize(raw_sent)[:self.args.max_len-2]
             split_tokens.insert(0, self.my_model.tokenizer.bos_token) 
@@ -220,10 +219,9 @@ class My_Train_Framework:
         
         label_list= []
         for index, sent in enumerate(raw_sent_list) :
-            generated_label = self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words"][index]])[0].replace("Ġ", "")
-            generated_label = self.my_model.tokenizer.decode([dic_res["label_words"][index]])[0].replace("Ġ", "")
+            generated_label = self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words_id"][index]])[0].replace("Ġ", "")
             label_list.append(generated_label)
-            print(sent + "             <mask> -> "+ generated_label)
+            print(sent + "             <mask> -> "+ generated_label +"    gold: {}".format(gold_list[index] if gold_list is not None else ""))
             
         return label_list
             

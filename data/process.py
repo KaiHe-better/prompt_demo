@@ -39,7 +39,7 @@ for index, item in enumerate(data):
         if index<val_index:
             if index< inten_num*2:
                 new_item = seg(item)
-                for i in range(100):
+                for i in range(200):
                     train_list.append(new_item)
             else:
                 train_list.append(seg(item))
