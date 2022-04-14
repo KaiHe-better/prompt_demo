@@ -105,9 +105,11 @@ class My_Train_Framework:
             with open(self.res_path+"/"+"perform.txt", "a") as f:
                 f.write(str(epoch_num))
                 f.write("\n")
-                f.write("loss: {}".format(str(round(dic_res["loss"].item(), 3))))
+                f.write("train loss: {}".format(str(round(dic_res["loss"].item(), 3))))
                 f.write("\n")
-                f.write("acc: {}".format(str(round(valid_acc.item(), 3))))
+                f.write("train acc: {}".format(str(round(train_acc.item(), 3))))
+                f.write("\n")
+                f.write("valid acc: {}".format(str(round(valid_acc.item(), 3))))
                 f.write("\n")
                 f.write("best epch: {}, best acc {}".format(str(best_epoch), str(round(best_acc.item(), 2))))
                 f.write("\n")
