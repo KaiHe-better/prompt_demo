@@ -67,14 +67,14 @@ class My_Train_Framework:
         best_epoch = -1
         for epoch_num in range(self.args.epoch):
             count= 0
+            epoch_gold_list, epoch_pred_list = [], []
             with tqdm(total=len(self.train_data_loader), desc="Training epoch: {}".format(epoch_num), ncols=100) as pbar:  
                 for data_list in self.train_data_loader:
-                    epoch_gold_list, epoch_pred_id_list, input_list, target_list = [], [], [], []
                     my_input, my_target = data_to_device(data_list)
                     dic_res = self.my_model(my_input, my_target)
                     
                     epoch_gold_list.append(torch.gather(my_target["label_ids"], 1, my_target["mask_indexs"].unsqueeze(1)).squeeze(1))
-                    epoch_pred_id_list.append(dic_res["label_words_id"])
+                    epoch_pred_list.append(dic_res["label_words_id"])
                     
                     self.optim.zero_grad()
                     dic_res["loss"].backward()
@@ -88,11 +88,11 @@ class My_Train_Framework:
                     pbar.update(1)
                     # break
                 
-            train_acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num)
+            train_acc = self.get_measure(epoch_gold_list, epoch_pred_list, epoch_num)
             valid_acc, input_list, target_list, epoch_pred_id_list = self.eval("Valid", epoch_num)
             
             print("\n")
-            if train_acc.item()>0.95:
+            if train_acc.item()>0:
                 if valid_acc > best_acc:
                     best_acc = valid_acc.item()
                     best_epoch = epoch_num
@@ -131,7 +131,7 @@ class My_Train_Framework:
             used_data_loader = self.val_data_loader
         else:
             used_data_loader = self.test_data_loader
-            
+        
         epoch_gold_list, epoch_pred_id_list, input_list, target_list = [], [], [], []
         with torch.no_grad():
             with tqdm(total=len(used_data_loader), desc=train_flag, ncols=100) as pbar: 
@@ -149,12 +149,14 @@ class My_Train_Framework:
                     postfix['valid_loss']= '{0:.4f}'.format(dic_res["loss"])
                     pbar.set_postfix(postfix) 
                     pbar.update(1)
+                    
                     # break
                     
         if train_flag == "Test":
             self.recored_res(input_list, target_list, epoch_pred_id_list)  
-                  
+        
         acc = self.get_measure(epoch_gold_list, epoch_pred_id_list, epoch_num, train_flag)
+      
         self.my_model.train()
         return acc, input_list, target_list, epoch_pred_id_list
     
@@ -169,8 +171,12 @@ class My_Train_Framework:
                     f.write("\n\n")
                                          
     def get_measure(self, epoch_gold_list, epoch_pred_id_list, epoch_num, train_flag="Train"):
+        acc_list = []
+        for gold, pred in zip(epoch_gold_list, epoch_pred_id_list):
+            acc = torch.mean((gold.view(-1) == pred.view(-1)).type(torch.FloatTensor))
+            acc_list.append(acc)
         
-        acc = torch.mean((torch.stack(epoch_gold_list).view(-1) == torch.stack(epoch_pred_id_list).view(-1)).type(torch.FloatTensor))
+        acc = sum(acc_list)/len(acc_list)
         print("")
         print("{0} res:  epoch: {1:s}, acc: {2:.2f}".format(str(train_flag), str(epoch_num), acc.item()))
         return acc
