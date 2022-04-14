@@ -25,8 +25,8 @@ import sys
 CUDA_LAUNCH_BLOCKING=1
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 os.environ['CUDA_VISIBLE_DEVICES'] = args.GPU
-label_ids_map = ['loving', 'hate', 'funny', 'angery', 'relieved', 'bored', 'empty', 'sad', 'happy', 'worried', 'enthusiastic', 'neutral', 'surprised']
-    
+# label_ids_map_old = ['loving', 'hate', 'funny', 'angery', 'relieved', 'bored', 'empty', 'sad', 'happy', 'worried', 'enthusiastic', 'neutral', 'surprised']
+label_ids_map =  ['hate', 'fine', 'angery', 'cool', 'funny', 'relieved', 'windy', 'bored', 'sad', 'fast', 'quiet', 'warm', 'slow', 'surprised', 'enthusiastic', 'safety', 'happy']
 
 if torch.cuda.is_available():
     print("try to use GPU..")
@@ -35,7 +35,7 @@ else:
 
 def main():
     my_model = My_model(label_ids_map)
-    train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer, label_ids_map)
+    train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer, my_model.label_ids_list)
     my_training_frame = My_Train_Framework(args, my_model, train_data_loader, val_data_loader, test_data_loader)
     
     my_training_frame.train()

@@ -1,10 +1,18 @@
 import pandas as pd
 
-with open("./tweet_emotions_promts.csv") as f:
+with open("./promt_dataset_emot_intent.csv") as f:
     data = f.readlines()
    
-valid_num = 1000  
-test_num = 2000
+all_num = len(data)
+valid_num = 4000  
+test_num = 4000
+
+inten_num = 10
+
+val_index = all_num - test_num - valid_num
+test_index = all_num - test_num
+
+
 
 train_file = "train.csv"
 valid_file= "valid.csv"
@@ -28,12 +36,17 @@ def seg(item):
 
 for index, item in enumerate(data):
     if len(item)>1:
-        if index<valid_num:
+        if index<val_index:
+            if index< inten_num*2:
+                new_item = seg(item)
+                for i in range(100):
+                    train_list.append(new_item)
+            else:
+                train_list.append(seg(item))
+        elif index<test_index:
             valid_list.append(seg(item))
-        elif index<test_num:
-            test_list.append(seg(item))
         else:
-            train_list.append(seg(item))
+            test_list.append(seg(item))
         
 
 print(set(all_labels))
