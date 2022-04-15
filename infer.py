@@ -19,16 +19,15 @@ parser.add_argument('--lr', default=1e-5, help='learning rate')
 args = parser.parse_args()
 
 
-from run import label_ids_map
-my_model = My_model(label_ids_map)
+from run import intention_prompt, intention, emotion_prompt, emotion, first_prompt_dic, intention_prompt, emotion_prompt
+my_model = My_model(intention_prompt, intention, emotion_prompt, emotion, first_prompt_dic)
 my_training_frame = My_Train_Framework(args, my_model)
 my_training_frame.__initialize__()
+emotion_first_prompt = first_prompt_dic["emotion"]
+intention_first_prompt = first_prompt_dic["intention"]
 
 
-
-
-prmopt = " I want to be <mask>"
-first_prompt = False
+# intention
 gold_list = ["fast", "slow", "slow", "cool", "warm", "windy", "quiet",  "safety" , "safety", "safety"]
 input_sentence_list = [
     "I want something exciting.",
@@ -42,15 +41,12 @@ input_sentence_list = [
     "It's raining outsides.",
     "It's snowing outside.",
     ]
+label_list = my_training_frame.infer(input_sentence_list, intention_prompt, intention_first_prompt, gold_list)
 
-label_list = my_training_frame.infer(input_sentence_list, prmopt, first_prompt, gold_list)
 
 print("\n")
 
-
-
-prmopt = "I feel <mask> that"
-first_prompt = True
+# emotion
 gold_list = ["sad", "sad", "enthusiastic", "fine", "sad", "sad", "sad", "sad", "sad", "fine", "sad"]
 input_sentence_list = [
     "Layin n bed with a headache ughhhh...waitin on your call...",
@@ -65,4 +61,4 @@ input_sentence_list = [
     "cant fall asleep",
     "Choked on her retainers",
     ]
-label_list = my_training_frame.infer(input_sentence_list, prmopt, first_prompt, gold_list)
+label_list = my_training_frame.infer(input_sentence_list, emotion_prompt, emotion_first_prompt, gold_list)

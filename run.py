@@ -26,7 +26,18 @@ CUDA_LAUNCH_BLOCKING=1
 os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 os.environ['CUDA_VISIBLE_DEVICES'] = args.GPU
 # label_ids_map_old = ['loving', 'hate', 'funny', 'angery', 'relieved', 'bored', 'empty', 'sad', 'happy', 'worried', 'enthusiastic', 'neutral', 'surprised']
-label_ids_map =  ['hate', 'fine', 'angery', 'cool', 'funny', 'relieved', 'windy', 'bored', 'sad', 'fast', 'quiet', 'warm', 'slow', 'surprised', 'enthusiastic', 'safety', 'happy']
+
+
+first_prompt_dic = {"intention": False, "emotion": True}  # Gold
+# first_prompt_dic = {"intention": True, "emotion": True}  # test
+
+intention_prompt = "I want to be <mask>."
+intention = ["fast", "slow",  "cool", "warm", "windy", "quiet",  "safety"]
+
+emotion_prompt = "I feel <mask> that"
+emotion =  ['hate', 'fine', 'angery',  'funny', 'relieved',  'bored', 'sad',  'surprised', 'enthusiastic',  'happy']
+
+
 
 if torch.cuda.is_available():
     print("try to use GPU..")
@@ -34,8 +45,9 @@ else:
     print("use CPU !")
 
 def main():
-    my_model = My_model(label_ids_map)
-    train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer, my_model.label_ids_list)
+    my_model = My_model(intention_prompt, intention, emotion_prompt, emotion, first_prompt_dic)
+    train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer, 
+                                                                           first_prompt_dic, emotion_prompt, intention_prompt)
     my_training_frame = My_Train_Framework(args, my_model, train_data_loader, val_data_loader, test_data_loader)
     
     my_training_frame.train()

@@ -86,7 +86,8 @@ class My_Train_Framework:
                     postfix['train_loss']=  dic_res["loss"].item()
                     pbar.set_postfix(postfix)
                     pbar.update(1)
-                    # break
+                    
+                    break
                 
             train_acc = self.get_measure(epoch_gold_list, epoch_pred_list, epoch_num)
             valid_acc, input_list, target_list, epoch_pred_id_list = self.eval("Valid", epoch_num)
@@ -150,7 +151,7 @@ class My_Train_Framework:
                     pbar.set_postfix(postfix) 
                     pbar.update(1)
                     
-                    # break
+                    break
                     
         if train_flag == "Test":
             self.recored_res(input_list, target_list, epoch_pred_id_list)  

@@ -11,11 +11,13 @@ seed(SEED)
 
 
 class My_Dataset(object):
-    def __init__(self, data, max_len, tokenizer, label_ids_list):
+    def __init__(self, data, max_len, tokenizer, first_prompt_dic, emotion_prompt, intention_prompt):
         self.all_data = data
         self.tokenizer = tokenizer
         self.max_len = max_len
-        self.label_ids_list = label_ids_list
+        self.first_prompt_dic = first_prompt_dic
+        self.emotion_prompt = emotion_prompt
+        self.intention_prompt = intention_prompt
         
     def __len__(self):
         return len(self.all_data)
@@ -23,7 +25,17 @@ class My_Dataset(object):
     def __getitem__(self, index):
         raw_data = self.all_data[index].strip()
         raw_id, raw_label, raw_sent  = raw_data.split(" || ")
-        
+        if raw_id[:9] =="intention":
+            if self.first_prompt_dic["intention"]:
+                raw_sent = self.intention_prompt+" "+raw_sent
+            else:
+                raw_sent = raw_sent+" "+self.intention_prompt
+        else :
+            if self.first_prompt_dic["emotion"]:
+                raw_sent = self.emotion_prompt+" "+raw_sent
+            else:
+                raw_sent = raw_sent+" "+self.emotion_prompt
+            
         split_tokens = self.tokenizer.tokenize(raw_sent)[:self.max_len-2]
         split_tokens.insert(0, self.tokenizer.bos_token) 
         split_tokens.append(self.tokenizer.eos_token)
@@ -76,13 +88,13 @@ def data_to_device(tensor_data_list):
     return my_input, my_target
 
     
-def get_data_loader(batch_size, max_len, tokenizer, label_ids_map, num_workers=8):
+def get_data_loader(batch_size, max_len, tokenizer, first_prompt_dic, emotion_prompt, intention_prompt, num_workers=8):
     train_dev_test_list = ['./data/train.csv', './data/valid.csv', './data/test.csv']
     
     data_set_list = []
     for fname in train_dev_test_list:
         raw_data = open(fname, 'r', encoding='utf-8').readlines()
-        data_set = My_Dataset(raw_data, max_len, tokenizer, label_ids_map)
+        data_set = My_Dataset(raw_data, max_len, tokenizer, first_prompt_dic, emotion_prompt, intention_prompt)
         
         data_loader = DataLoader(dataset=data_set,
                                     batch_size=batch_size,

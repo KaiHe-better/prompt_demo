@@ -32,14 +32,14 @@ def seg(item):
     if sent[0] == "\"" and sent[-1] == "\"":
         sent = sent[1:-1]
           
-    return new[0]+" || "+new[1]+" || "+ sent
+    return new[0]+" || "+new[1]+" || "+ sent.replace("I feel <mask> that ", "").strip()
 
 for index, item in enumerate(data):
     if len(item)>1:
         if index<val_index:
             if index< inten_num*2:
                 new_item = seg(item)
-                for i in range(200):
+                for i in range(1000):
                     train_list.append(new_item)
             else:
                 train_list.append(seg(item))
