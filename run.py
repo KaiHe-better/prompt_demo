@@ -46,8 +46,10 @@ else:
 
 def main():
     my_model = My_model(intention_prompt, intention, emotion_prompt, emotion, first_prompt_dic)
+    
     train_data_loader, val_data_loader, test_data_loader = get_data_loader(args.batch_size, args.max_len, my_model.tokenizer, 
                                                                            first_prompt_dic, emotion_prompt, intention_prompt)
+    
     my_training_frame = My_Train_Framework(args, my_model, train_data_loader, val_data_loader, test_data_loader)
     
     my_training_frame.train()

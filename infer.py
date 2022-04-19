@@ -9,7 +9,7 @@ parser.add_argument('--ID', default='0', type=str, help='temp ID for recording r
 parser.add_argument('--GPU', default='0', type=str, help='which GPU used')
 parser.add_argument('--batch_size', default=64, type=int, help='number of examples per batch')
 parser.add_argument('--max_len', default=80, help='the max length of sentences')
-parser.add_argument('--load_ckpt_path', default="2", help='if load_ckpt_path is not None, then loading the checkpoint')
+parser.add_argument('--load_ckpt_path', default="3_0.99", help='if load_ckpt_path is not None, then loading the checkpoint')
 
 parser.add_argument('--early_stop_num', default=1000, help='how many epoch for training')
 parser.add_argument('--epoch', default=10000, help='how many epoch for training')
@@ -28,18 +28,15 @@ intention_first_prompt = first_prompt_dic["intention"]
 
 
 # intention
-gold_list = ["fast", "slow", "slow", "cool", "warm", "windy", "quiet",  "safety" , "safety", "safety"]
+gold_list = ["fast", "slow", "cool", "warm", "windy", "quiet",  "safety" ]
 input_sentence_list = [
     "I want something exciting.",
     "My car uses gasoline to much. ",
-    "My kids are in the car.",
     "I feel too warm.",
     "I feel too cold.",
     "I need some fresh air.",
     "Close the window.",
     "The road is muddy." ,
-    "It's raining outsides.",
-    "It's snowing outside.",
     ]
 label_list = my_training_frame.infer(input_sentence_list, intention_prompt, intention_first_prompt, gold_list)
 

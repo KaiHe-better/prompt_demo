@@ -89,7 +89,8 @@ def data_to_device(tensor_data_list):
 
     
 def get_data_loader(batch_size, max_len, tokenizer, first_prompt_dic, emotion_prompt, intention_prompt, num_workers=8):
-    train_dev_test_list = ['./data/train.csv', './data/valid.csv', './data/test.csv']
+    # train_dev_test_list = ['./data/train.csv', './data/valid.csv', './data/test.csv']
+    train_dev_test_list = ['./data/train_test.csv', './data/valid_test.csv', './data/test.csv']
     
     data_set_list = []
     for fname in train_dev_test_list:

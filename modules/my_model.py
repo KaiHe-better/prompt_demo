@@ -19,15 +19,19 @@ class My_model(nn.Module):
         self.first_prompt_dic = first_prompt_dic
         self.intention_label_ids_list = []
         self.emotion_label_ids_list = []
+        
+        all_dic = {}
         for id_token in intention_label_word:
             tok = sorted(self.tokenizer.tokenize(id_token, is_split_into_words=True), key=lambda x:len(x), reverse=True)[0]
             self.intention_label_ids_list.append(self.tokenizer.convert_tokens_to_ids(tok))
+            all_dic[tok] = self.tokenizer.convert_tokens_to_ids(tok)
             
         for id_token in emotion_label_word:
             tok = sorted(self.tokenizer.tokenize(id_token, is_split_into_words=True), key=lambda x:len(x), reverse=True)[0]
             self.emotion_label_ids_list.append(self.tokenizer.convert_tokens_to_ids(tok))
+            all_dic[tok] = self.tokenizer.convert_tokens_to_ids(tok)
     
-    
+        # print(all_dic)
     
     def forward(self, my_input, my_target):
         logits = self.model(my_input['all_tokens_ids'], attention_mask=my_input['attention_mask'], labels=my_target['label_ids'])
@@ -55,13 +59,40 @@ class My_model(nn.Module):
             if emotion_s == self.emotion_prompt:
                 choose_id = torch.argmax(logits["logits"][index][my_target["mask_indexs"][index], self.emotion_label_ids_list])
                 label_words_id.append(self.emotion_label_ids_list[choose_id])
-                
             elif intention_s == self.intention_prompt:
                 choose_id = torch.argmax(logits["logits"][index][my_target["mask_indexs"][index], self.intention_label_ids_list])
                 label_words_id.append(self.intention_label_ids_list[choose_id])
             else:
                 raise Exception("no right prompt founded ! if first_prompt = False, need period at last !")
-                    
+        
+        
+        # print("")
+        # print(" self.emotion_prompt",  self.emotion_prompt)
+        # print(" self.intention_prompt",  self.intention_prompt)
+        # if emotion_s == self.emotion_prompt:
+        #     print(emotion_s)
+        #     print(self.tokenizer.convert_ids_to_tokens(emotion_s))
+        #     print(self.emotion_label_ids_list)
+        #     print(self.tokenizer.convert_ids_to_tokens(self.emotion_label_ids_list))
+            
+        #     print("logits")
+        #     print(logits["logits"][index][my_target["mask_indexs"][index], self.emotion_label_ids_list])
+        #     print("choose_id")
+        #     print(choose_id)
+        
+        
+        # else:
+        #     print(intention_s)
+        #     print(self.tokenizer.convert_ids_to_tokens(intention_s))
+        #     print(self.intention_label_ids_list)
+        #     print(self.tokenizer.convert_ids_to_tokens(self.intention_label_ids_list))
+            
+        #     print("logits")
+        #     print(logits["logits"][index][my_target["mask_indexs"][index], self.intention_label_ids_list])
+        #     print("choose_id")
+        #     print(choose_id)
+            
+   
         
         
         return {"label_words_id": torch.tensor(label_words_id).cuda() if torch.cuda.is_available() else torch.tensor(label_words_id),

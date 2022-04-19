@@ -1,0 +1,1296 @@
+0
+train loss: 1.199
+train acc: 0.62
+valid acc: 0.505
+best epch: -1, best acc -1
+
+1
+train loss: 1.126
+train acc: 0.639
+valid acc: 0.531
+best epch: -1, best acc -1
+
+2
+train loss: 1.152
+train acc: 0.652
+valid acc: 0.52
+best epch: -1, best acc -1
+
+3
+train loss: 0.849
+train acc: 0.659
+valid acc: 0.535
+best epch: -1, best acc -1
+
+4
+train loss: 0.852
+train acc: 0.667
+valid acc: 0.528
+best epch: -1, best acc -1
+
+5
+train loss: 1.472
+train acc: 0.678
+valid acc: 0.527
+best epch: -1, best acc -1
+
+6
+train loss: 0.67
+train acc: 0.685
+valid acc: 0.5
+best epch: -1, best acc -1
+
+7
+train loss: 1.045
+train acc: 0.7
+valid acc: 0.505
+best epch: -1, best acc -1
+
+8
+train loss: 0.846
+train acc: 0.713
+valid acc: 0.514
+best epch: -1, best acc -1
+
+9
+train loss: 1.55
+train acc: 0.726
+valid acc: 0.471
+best epch: -1, best acc -1
+
+10
+train loss: 0.236
+train acc: 0.744
+valid acc: 0.474
+best epch: -1, best acc -1
+
+11
+train loss: 1.074
+train acc: 0.763
+valid acc: 0.488
+best epch: -1, best acc -1
+
+12
+train loss: 0.493
+train acc: 0.778
+valid acc: 0.464
+best epch: -1, best acc -1
+
+13
+train loss: 1.219
+train acc: 0.797
+valid acc: 0.489
+best epch: -1, best acc -1
+
+14
+train loss: 0.478
+train acc: 0.811
+valid acc: 0.485
+best epch: -1, best acc -1
+
+15
+train loss: 0.376
+train acc: 0.831
+valid acc: 0.463
+best epch: -1, best acc -1
+
+16
+train loss: 0.739
+train acc: 0.848
+valid acc: 0.461
+best epch: -1, best acc -1
+
+17
+train loss: 0.643
+train acc: 0.859
+valid acc: 0.482
+best epch: -1, best acc -1
+
+18
+train loss: 0.262
+train acc: 0.876
+valid acc: 0.43
+best epch: -1, best acc -1
+
+19
+train loss: 0.464
+train acc: 0.89
+valid acc: 0.469
+best epch: -1, best acc -1
+
+20
+train loss: 0.284
+train acc: 0.901
+valid acc: 0.445
+best epch: -1, best acc -1
+
+21
+train loss: 0.381
+train acc: 0.908
+valid acc: 0.438
+best epch: -1, best acc -1
+
+22
+train loss: 0.23
+train acc: 0.92
+valid acc: 0.446
+best epch: -1, best acc -1
+
+23
+train loss: 0.661
+train acc: 0.924
+valid acc: 0.45
+best epch: -1, best acc -1
+
+24
+train loss: 0.523
+train acc: 0.927
+valid acc: 0.473
+best epch: -1, best acc -1
+
+25
+train loss: 0.117
+train acc: 0.936
+valid acc: 0.45
+best epch: -1, best acc -1
+
+26
+train loss: 0.049
+train acc: 0.942
+valid acc: 0.454
+best epch: -1, best acc -1
+
+27
+train loss: 0.013
+train acc: 0.949
+valid acc: 0.442
+best epch: -1, best acc -1
+
+28
+train loss: 0.059
+train acc: 0.951
+valid acc: 0.455
+best epch: -1, best acc -1
+
+29
+train loss: 0.067
+train acc: 0.958
+valid acc: 0.437
+best epch: -1, best acc -1
+
+30
+train loss: 0.01
+train acc: 0.957
+valid acc: 0.456
+best epch: -1, best acc -1
+
+31
+train loss: 0.543
+train acc: 0.961
+valid acc: 0.43
+best epch: -1, best acc -1
+
+32
+train loss: 0.065
+train acc: 0.963
+valid acc: 0.465
+best epch: -1, best acc -1
+
+33
+train loss: 0.52
+train acc: 0.963
+valid acc: 0.435
+best epch: -1, best acc -1
+
+34
+train loss: 0.014
+train acc: 0.964
+valid acc: 0.449
+best epch: -1, best acc -1
+
+35
+train loss: 0.198
+train acc: 0.968
+valid acc: 0.431
+best epch: -1, best acc -1
+
+36
+train loss: 0.043
+train acc: 0.969
+valid acc: 0.438
+best epch: -1, best acc -1
+
+37
+train loss: 0.033
+train acc: 0.971
+valid acc: 0.423
+best epch: -1, best acc -1
+
+38
+train loss: 0.057
+train acc: 0.973
+valid acc: 0.421
+best epch: -1, best acc -1
+
+39
+train loss: 0.109
+train acc: 0.973
+valid acc: 0.452
+best epch: -1, best acc -1
+
+40
+train loss: 0.308
+train acc: 0.971
+valid acc: 0.437
+best epch: -1, best acc -1
+
+41
+train loss: 0.005
+train acc: 0.973
+valid acc: 0.438
+best epch: -1, best acc -1
+
+42
+train loss: 0.015
+train acc: 0.977
+valid acc: 0.438
+best epch: -1, best acc -1
+
+43
+train loss: 0.029
+train acc: 0.979
+valid acc: 0.442
+best epch: -1, best acc -1
+
+44
+train loss: 0.001
+train acc: 0.978
+valid acc: 0.434
+best epch: -1, best acc -1
+
+45
+train loss: 0.017
+train acc: 0.979
+valid acc: 0.484
+best epch: -1, best acc -1
+
+46
+train loss: 0.007
+train acc: 0.98
+valid acc: 0.443
+best epch: -1, best acc -1
+
+47
+train loss: 0.024
+train acc: 0.98
+valid acc: 0.452
+best epch: -1, best acc -1
+
+48
+train loss: 0.013
+train acc: 0.981
+valid acc: 0.468
+best epch: -1, best acc -1
+
+49
+train loss: 0.001
+train acc: 0.982
+valid acc: 0.442
+best epch: -1, best acc -1
+
+50
+train loss: 0.118
+train acc: 0.981
+valid acc: 0.426
+best epch: -1, best acc -1
+
+51
+train loss: 0.001
+train acc: 0.98
+valid acc: 0.45
+best epch: -1, best acc -1
+
+52
+train loss: 0.077
+train acc: 0.98
+valid acc: 0.443
+best epch: -1, best acc -1
+
+53
+train loss: 0.006
+train acc: 0.982
+valid acc: 0.456
+best epch: -1, best acc -1
+
+54
+train loss: 0.202
+train acc: 0.983
+valid acc: 0.436
+best epch: -1, best acc -1
+
+55
+train loss: 0.001
+train acc: 0.983
+valid acc: 0.463
+best epch: -1, best acc -1
+
+56
+train loss: 0.002
+train acc: 0.984
+valid acc: 0.434
+best epch: -1, best acc -1
+
+57
+train loss: 0.017
+train acc: 0.985
+valid acc: 0.448
+best epch: -1, best acc -1
+
+58
+train loss: 0.054
+train acc: 0.985
+valid acc: 0.436
+best epch: -1, best acc -1
+
+59
+train loss: 0.033
+train acc: 0.983
+valid acc: 0.463
+best epch: -1, best acc -1
+
+60
+train loss: 0.002
+train acc: 0.986
+valid acc: 0.435
+best epch: -1, best acc -1
+
+61
+train loss: 0.002
+train acc: 0.985
+valid acc: 0.456
+best epch: -1, best acc -1
+
+62
+train loss: 0.0
+train acc: 0.987
+valid acc: 0.451
+best epch: -1, best acc -1
+
+63
+train loss: 0.003
+train acc: 0.986
+valid acc: 0.454
+best epch: -1, best acc -1
+
+64
+train loss: 0.008
+train acc: 0.987
+valid acc: 0.452
+best epch: -1, best acc -1
+
+65
+train loss: 0.082
+train acc: 0.986
+valid acc: 0.456
+best epch: -1, best acc -1
+
+66
+train loss: 0.0
+train acc: 0.987
+valid acc: 0.442
+best epch: -1, best acc -1
+
+67
+train loss: 0.001
+train acc: 0.986
+valid acc: 0.455
+best epch: -1, best acc -1
+
+68
+train loss: 0.231
+train acc: 0.986
+valid acc: 0.422
+best epch: -1, best acc -1
+
+69
+train loss: 0.002
+train acc: 0.983
+valid acc: 0.45
+best epch: -1, best acc -1
+
+70
+train loss: 0.001
+train acc: 0.988
+valid acc: 0.432
+best epch: -1, best acc -1
+
+71
+train loss: 0.071
+train acc: 0.989
+valid acc: 0.436
+best epch: -1, best acc -1
+
+72
+train loss: 0.0
+train acc: 0.986
+valid acc: 0.449
+best epch: -1, best acc -1
+
+73
+train loss: 0.006
+train acc: 0.989
+valid acc: 0.425
+best epch: -1, best acc -1
+
+74
+train loss: 0.001
+train acc: 0.988
+valid acc: 0.456
+best epch: -1, best acc -1
+
+75
+train loss: 0.012
+train acc: 0.988
+valid acc: 0.451
+best epch: -1, best acc -1
+
+76
+train loss: 0.081
+train acc: 0.988
+valid acc: 0.401
+best epch: -1, best acc -1
+
+77
+train loss: 0.0
+train acc: 0.987
+valid acc: 0.451
+best epch: -1, best acc -1
+
+78
+train loss: 0.001
+train acc: 0.989
+valid acc: 0.445
+best epch: -1, best acc -1
+
+79
+train loss: 0.002
+train acc: 0.989
+valid acc: 0.458
+best epch: -1, best acc -1
+
+80
+train loss: 0.001
+train acc: 0.989
+valid acc: 0.456
+best epch: -1, best acc -1
+
+81
+train loss: 0.0
+train acc: 0.989
+valid acc: 0.438
+best epch: -1, best acc -1
+
+82
+train loss: 0.003
+train acc: 0.989
+valid acc: 0.427
+best epch: -1, best acc -1
+
+83
+train loss: 0.003
+train acc: 0.99
+valid acc: 0.445
+best epch: -1, best acc -1
+
+84
+train loss: 0.032
+train acc: 0.99
+valid acc: 0.47
+best epch: -1, best acc -1
+
+85
+train loss: 0.001
+train acc: 0.989
+valid acc: 0.437
+best epch: -1, best acc -1
+
+86
+train loss: 0.245
+train acc: 0.989
+valid acc: 0.457
+best epch: -1, best acc -1
+
+87
+train loss: 0.003
+train acc: 0.99
+valid acc: 0.437
+best epch: -1, best acc -1
+
+88
+train loss: 0.204
+train acc: 0.989
+valid acc: 0.447
+best epch: -1, best acc -1
+
+89
+train loss: 0.004
+train acc: 0.989
+valid acc: 0.459
+best epch: -1, best acc -1
+
+90
+train loss: 0.0
+train acc: 0.99
+valid acc: 0.443
+best epch: -1, best acc -1
+
+91
+train loss: 0.0
+train acc: 0.99
+valid acc: 0.458
+best epch: -1, best acc -1
+
+92
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.439
+best epch: 92, best acc 0.44
+
+93
+train loss: 0.0
+train acc: 0.99
+valid acc: 0.446
+best epch: 92, best acc 0.44
+
+94
+train loss: 0.027
+train acc: 0.99
+valid acc: 0.457
+best epch: 94, best acc 0.46
+
+95
+train loss: 0.0
+train acc: 0.99
+valid acc: 0.463
+best epch: 95, best acc 0.46
+
+96
+train loss: 0.042
+train acc: 0.991
+valid acc: 0.444
+best epch: 95, best acc 0.46
+
+97
+train loss: 0.014
+train acc: 0.99
+valid acc: 0.43
+best epch: 95, best acc 0.46
+
+98
+train loss: 0.003
+train acc: 0.99
+valid acc: 0.446
+best epch: 95, best acc 0.46
+
+99
+train loss: 0.084
+train acc: 0.99
+valid acc: 0.482
+best epch: 99, best acc 0.48
+
+100
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.458
+best epch: 99, best acc 0.48
+
+101
+train loss: 0.011
+train acc: 0.991
+valid acc: 0.446
+best epch: 99, best acc 0.48
+
+102
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.462
+best epch: 99, best acc 0.48
+
+103
+train loss: 0.004
+train acc: 0.992
+valid acc: 0.434
+best epch: 99, best acc 0.48
+
+104
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.449
+best epch: 99, best acc 0.48
+
+105
+train loss: 0.002
+train acc: 0.991
+valid acc: 0.456
+best epch: 99, best acc 0.48
+
+106
+train loss: 0.0
+train acc: 0.99
+valid acc: 0.457
+best epch: 99, best acc 0.48
+
+107
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.453
+best epch: 99, best acc 0.48
+
+108
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.453
+best epch: 99, best acc 0.48
+
+109
+train loss: 0.004
+train acc: 0.991
+valid acc: 0.436
+best epch: 99, best acc 0.48
+
+110
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.444
+best epch: 99, best acc 0.48
+
+111
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.475
+best epch: 99, best acc 0.48
+
+112
+train loss: 0.003
+train acc: 0.991
+valid acc: 0.447
+best epch: 99, best acc 0.48
+
+113
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.451
+best epch: 99, best acc 0.48
+
+114
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.469
+best epch: 99, best acc 0.48
+
+115
+train loss: 0.002
+train acc: 0.992
+valid acc: 0.449
+best epch: 99, best acc 0.48
+
+116
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.45
+best epch: 99, best acc 0.48
+
+117
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.447
+best epch: 99, best acc 0.48
+
+118
+train loss: 0.239
+train acc: 0.991
+valid acc: 0.483
+best epch: 118, best acc 0.48
+
+119
+train loss: 0.116
+train acc: 0.988
+valid acc: 0.464
+best epch: 118, best acc 0.48
+
+120
+train loss: 0.036
+train acc: 0.992
+valid acc: 0.478
+best epch: 118, best acc 0.48
+
+121
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.446
+best epch: 118, best acc 0.48
+
+122
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.468
+best epch: 118, best acc 0.48
+
+123
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.446
+best epch: 118, best acc 0.48
+
+124
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.438
+best epch: 118, best acc 0.48
+
+125
+train loss: 0.147
+train acc: 0.992
+valid acc: 0.453
+best epch: 118, best acc 0.48
+
+126
+train loss: 0.004
+train acc: 0.992
+valid acc: 0.471
+best epch: 118, best acc 0.48
+
+127
+train loss: 0.004
+train acc: 0.992
+valid acc: 0.43
+best epch: 118, best acc 0.48
+
+128
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.431
+best epch: 118, best acc 0.48
+
+129
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.456
+best epch: 118, best acc 0.48
+
+130
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.455
+best epch: 118, best acc 0.48
+
+131
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.442
+best epch: 118, best acc 0.48
+
+132
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.475
+best epch: 118, best acc 0.48
+
+133
+train loss: 0.157
+train acc: 0.992
+valid acc: 0.462
+best epch: 118, best acc 0.48
+
+134
+train loss: 0.0
+train acc: 0.989
+valid acc: 0.462
+best epch: 118, best acc 0.48
+
+135
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.464
+best epch: 118, best acc 0.48
+
+136
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.463
+best epch: 118, best acc 0.48
+
+137
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.45
+best epch: 118, best acc 0.48
+
+138
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.477
+best epch: 118, best acc 0.48
+
+139
+train loss: 0.002
+train acc: 0.993
+valid acc: 0.44
+best epch: 118, best acc 0.48
+
+140
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.471
+best epch: 118, best acc 0.48
+
+141
+train loss: 0.009
+train acc: 0.993
+valid acc: 0.442
+best epch: 118, best acc 0.48
+
+142
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.49
+best epch: 142, best acc 0.49
+
+143
+train loss: 0.026
+train acc: 0.993
+valid acc: 0.484
+best epch: 142, best acc 0.49
+
+144
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.457
+best epch: 142, best acc 0.49
+
+145
+train loss: 0.002
+train acc: 0.992
+valid acc: 0.465
+best epch: 142, best acc 0.49
+
+146
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.43
+best epch: 142, best acc 0.49
+
+147
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.473
+best epch: 142, best acc 0.49
+
+148
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.454
+best epch: 142, best acc 0.49
+
+149
+train loss: 0.001
+train acc: 0.992
+valid acc: 0.452
+best epch: 142, best acc 0.49
+
+150
+train loss: 0.268
+train acc: 0.992
+valid acc: 0.479
+best epch: 142, best acc 0.49
+
+151
+train loss: 0.0
+train acc: 0.991
+valid acc: 0.462
+best epch: 142, best acc 0.49
+
+152
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.459
+best epch: 142, best acc 0.49
+
+153
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.454
+best epch: 142, best acc 0.49
+
+154
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.465
+best epch: 142, best acc 0.49
+
+155
+train loss: 0.001
+train acc: 0.993
+valid acc: 0.459
+best epch: 142, best acc 0.49
+
+156
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.444
+best epch: 142, best acc 0.49
+
+157
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.455
+best epch: 142, best acc 0.49
+
+158
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.436
+best epch: 142, best acc 0.49
+
+159
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.463
+best epch: 142, best acc 0.49
+
+160
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.484
+best epch: 142, best acc 0.49
+
+161
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.474
+best epch: 142, best acc 0.49
+
+162
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.445
+best epch: 142, best acc 0.49
+
+163
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.461
+best epch: 142, best acc 0.49
+
+164
+train loss: 0.038
+train acc: 0.993
+valid acc: 0.453
+best epch: 142, best acc 0.49
+
+165
+train loss: 0.0
+train acc: 0.992
+valid acc: 0.449
+best epch: 142, best acc 0.49
+
+166
+train loss: 0.001
+train acc: 0.993
+valid acc: 0.437
+best epch: 142, best acc 0.49
+
+167
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.471
+best epch: 142, best acc 0.49
+
+168
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.457
+best epch: 142, best acc 0.49
+
+169
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.461
+best epch: 142, best acc 0.49
+
+170
+train loss: 0.003
+train acc: 0.993
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+171
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.447
+best epch: 142, best acc 0.49
+
+172
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.475
+best epch: 142, best acc 0.49
+
+173
+train loss: 0.337
+train acc: 0.993
+valid acc: 0.459
+best epch: 142, best acc 0.49
+
+174
+train loss: 0.001
+train acc: 0.992
+valid acc: 0.46
+best epch: 142, best acc 0.49
+
+175
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.45
+best epch: 142, best acc 0.49
+
+176
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.453
+best epch: 142, best acc 0.49
+
+177
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+178
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.462
+best epch: 142, best acc 0.49
+
+179
+train loss: 0.001
+train acc: 0.993
+valid acc: 0.457
+best epch: 142, best acc 0.49
+
+180
+train loss: 0.001
+train acc: 0.994
+valid acc: 0.457
+best epch: 142, best acc 0.49
+
+181
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.46
+best epch: 142, best acc 0.49
+
+182
+train loss: 0.002
+train acc: 0.993
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+183
+train loss: 0.001
+train acc: 0.994
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+184
+train loss: 0.001
+train acc: 0.993
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+185
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.466
+best epch: 142, best acc 0.49
+
+186
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.46
+best epch: 142, best acc 0.49
+
+187
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.478
+best epch: 142, best acc 0.49
+
+188
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.438
+best epch: 142, best acc 0.49
+
+189
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.467
+best epch: 142, best acc 0.49
+
+190
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.458
+best epch: 142, best acc 0.49
+
+191
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.465
+best epch: 142, best acc 0.49
+
+192
+train loss: 0.028
+train acc: 0.993
+valid acc: 0.445
+best epch: 142, best acc 0.49
+
+193
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.457
+best epch: 142, best acc 0.49
+
+194
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.46
+best epch: 142, best acc 0.49
+
+195
+train loss: 0.333
+train acc: 0.994
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+196
+train loss: 0.001
+train acc: 0.994
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+197
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.456
+best epch: 142, best acc 0.49
+
+198
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.47
+best epch: 142, best acc 0.49
+
+199
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.464
+best epch: 142, best acc 0.49
+
+200
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.475
+best epch: 142, best acc 0.49
+
+201
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.469
+best epch: 142, best acc 0.49
+
+202
+train loss: 0.001
+train acc: 0.994
+valid acc: 0.46
+best epch: 142, best acc 0.49
+
+203
+train loss: 0.002
+train acc: 0.994
+valid acc: 0.45
+best epch: 142, best acc 0.49
+
+204
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.474
+best epch: 142, best acc 0.49
+
+205
+train loss: 0.001
+train acc: 0.994
+valid acc: 0.447
+best epch: 142, best acc 0.49
+
+206
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.467
+best epch: 142, best acc 0.49
+
+207
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.464
+best epch: 142, best acc 0.49
+
+208
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.465
+best epch: 142, best acc 0.49
+
+209
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.469
+best epch: 142, best acc 0.49
+
+210
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.452
+best epch: 142, best acc 0.49
+
+211
+train loss: 0.033
+train acc: 0.994
+valid acc: 0.457
+best epch: 142, best acc 0.49
+
+212
+train loss: 0.0
+train acc: 0.993
+valid acc: 0.476
+best epch: 142, best acc 0.49
+
+213
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.454
+best epch: 142, best acc 0.49
+
+214
+train loss: 0.0
+train acc: 0.994
+valid acc: 0.469
+best epch: 142, best acc 0.49
+
+215
+train loss: 0.001
+train acc: 0.994
+valid acc: 0.461
+best epch: 142, best acc 0.49
+

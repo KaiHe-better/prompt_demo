@@ -41,7 +41,8 @@ class My_Train_Framework:
                 raise Exception("No checkpoint found at '%s'" % self.args.load_ckpt_path)
         
             own_state = self.my_model.state_dict()
-            for name, param in state_dict.items():
+            # for name, param in state_dict.items():
+            for name, param in state_dict["state_dict"].items():
                 if name in own_state.keys():
                     own_state[name].copy_(param)
         else:
@@ -68,9 +69,13 @@ class My_Train_Framework:
         for epoch_num in range(self.args.epoch):
             count= 0
             epoch_gold_list, epoch_pred_list = [], []
+            train_input_list, train_target_list = [], []
             with tqdm(total=len(self.train_data_loader), desc="Training epoch: {}".format(epoch_num), ncols=100) as pbar:  
                 for data_list in self.train_data_loader:
                     my_input, my_target = data_to_device(data_list)
+                    train_input_list.append(my_input)
+                    train_target_list.append(my_target)
+                    
                     dic_res = self.my_model(my_input, my_target)
                     
                     epoch_gold_list.append(torch.gather(my_target["label_ids"], 1, my_target["mask_indexs"].unsqueeze(1)).squeeze(1))
@@ -87,13 +92,14 @@ class My_Train_Framework:
                     pbar.set_postfix(postfix)
                     pbar.update(1)
                     
-                    break
+                    # break
                 
             train_acc = self.get_measure(epoch_gold_list, epoch_pred_list, epoch_num)
-            valid_acc, input_list, target_list, epoch_pred_id_list = self.eval("Valid", epoch_num)
+            
+            valid_acc, val_input_list, val_target_list, val_pred_id_list = self.eval("Valid", epoch_num)
             
             print("\n")
-            if train_acc.item()>0.95:
+            if train_acc.item()>0.99:
                 if valid_acc > best_acc:
                     best_acc = valid_acc.item()
                     best_epoch = epoch_num
@@ -102,8 +108,9 @@ class My_Train_Framework:
                     print("epoch: {0:s}, train acc: {1:.2f}, valid acc {2:.2f}".format(str(best_epoch), train_acc.item(), best_acc))
                     print("\n")
                 
-                    torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path)
-                    self.recored_res(input_list, target_list, epoch_pred_id_list)
+                    torch.save({'state_dict': self.my_model.state_dict()}, self.args.load_ckpt_path+"_"+str(round(train_acc.item(),2)))
+                    self.recored_res(val_input_list, val_target_list, val_pred_id_list)
+                    
             
             with open(self.res_path+"/"+"perform.txt", "a") as f:
                 f.write(str(epoch_num))
@@ -118,10 +125,10 @@ class My_Train_Framework:
                 f.write("\n")
                 f.write("\n")
                 
-            # if count < self.args.early_stop_num:
-            #     count+=1
-            # else:
-            #     break
+        #     # if count < self.args.early_stop_num:
+        #     #     count+=1
+        #     # else:
+        #     #     break
 
         print("Finish !")
         return best_epoch, best_dic_F
@@ -151,7 +158,7 @@ class My_Train_Framework:
                     pbar.set_postfix(postfix) 
                     pbar.update(1)
                     
-                    break
+                    # break
                     
         if train_flag == "Test":
             self.recored_res(input_list, target_list, epoch_pred_id_list)  
@@ -183,6 +190,7 @@ class My_Train_Framework:
         return acc
     
     def infer(self, input_list, prompt, first_prompt, gold_list=None):
+        self.my_model.eval()
         new_data_list = []
         all_tokens_ids = []
         attention_mask = []

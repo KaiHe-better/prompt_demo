@@ -370,3 +370,9 @@ train acc: 0.985
 valid acc: 0.456
 best epch: 29, best acc 0.48
 
+62
+train loss: 0.127
+train acc: 0.983
+valid acc: 0.439
+best epch: 29, best acc 0.48
+
