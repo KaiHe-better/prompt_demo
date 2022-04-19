@@ -43,7 +43,7 @@ label_list = my_training_frame.infer(input_sentence_list, intention_prompt, inte
 
 print("\n")
 
-# emotion
+# emotion1
 gold_list = ["sad", "sad", "enthusiastic", "fine", "sad", "sad", "sad", "sad", "sad", "fine", "sad"]
 input_sentence_list = [
     "Layin n bed with a headache ughhhh...waitin on your call...",
@@ -58,4 +58,20 @@ input_sentence_list = [
     "cant fall asleep",
     "Choked on her retainers",
     ]
+label_list = my_training_frame.infer(input_sentence_list, emotion_prompt, emotion_first_prompt, gold_list)
+
+
+print("\n")
+
+# emotion2
+gold_list = ["sad",  "bored", "surprised", "happy", "happy", "fine" ]  
+input_sentence_list = [
+"Why am I having such a hard time falling asleep",
+"omg i realy can't sleep ughh",
+"just took the Terminator trilogy but what I need is actually TV series and I still can't find anything tempting",
+"wishing i had marvelous misadventures of flap jack on DVD",
+"Waah! You were in Aberdeen? F**K why do I miss all the best gigs?!",
+"walked home in the rain."
+]
+
 label_list = my_training_frame.infer(input_sentence_list, emotion_prompt, emotion_first_prompt, gold_list)

@@ -228,7 +228,8 @@ class My_Train_Framework:
         
         label_list= []
         for index, sent in enumerate(raw_sent_list) :
-            generated_label = self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words_id"][index]])[0].replace("Ġ", "")
+            # generated_label = self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words_id"][index]])[0].replace("Ġ", "")
+            generated_label = self.my_model.all_dic[self.my_model.tokenizer.convert_ids_to_tokens([dic_res["label_words_id"][index]])[0]]
             label_list.append(generated_label)
             print(sent + "             <mask> -> "+ generated_label +"    gold: {}".format(gold_list[index] if gold_list is not None else ""))
             
